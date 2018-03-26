@@ -1,0 +1,327 @@
+---
+title: "Prep of MARINe Infographics"
+author: "Ben Best"
+date: "March 24, 2018"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    code_folding: hide
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = T, message = F, warning = F, error = F)
+```
+
+```{r include}
+library(tidyverse)
+library(lubridate)
+library(readxl)
+library(here)
+here = here::here
+library(glue)
+library(fs)
+library(sf)
+library(mapview)
+library(RColorBrewer)
+
+library(dygraphs) # devtools::install_github("rstudio/dygraphs")
+library(xts)
+devtools::load_all(here("../infographiq"))
+
+raw_csv <- here("data/MARINe_raw_4c1e_9218_7d13.csv")
+
+# https://www.eeb.ucsc.edu/pacificrockyintertidal/target/index.html
+spp  <- tribble(
+       ~sp,           ~sp_target,             ~sp_name,
+  "MYTCAL",            "mytilus", "California Mussels",
+  "CHTBAL", "chthamalus_balanus",    "Acorn Barnacles")
+
+sanctuaries = c("cinms", "mbnms")
+
+d_csv <- here("data/sanctuary_species_percentcover.csv")
+
+# functions ----
+get_nms_ply <- function(nms){
+  # get polygon for National Marine Sanctuary
+  
+  nms_shp <- here(glue("data/shp/{nms}_py.shp"))
+  
+  if (!file.exists(nms_shp)){
+    # download if needed
+    
+    # https://sanctuaries.noaa.gov/library/imast_gis.html
+    nms_url <- glue("https://sanctuaries.noaa.gov/library/imast/{nms}_py2.zip")
+    nms_zip <- here(glue("data/{nms}.zip"))
+    shp_dir <- here("data/shp")
+    
+    download.file(nms_url, nms_zip)
+    unzip(nms_zip, exdir = shp_dir)
+    file_delete(nms_zip)
+  }
+  # read and convert to standard geographic projection
+  read_sf(nms_shp) %>%
+    st_transform(4326)
+}
+
+map_nms_sites <- function(nms){
+  NMS <- str_to_upper(nms)
+  
+  # get sites in nms
+  sites_nms_shp <- here(glue("data/shp/{NMS}_sites.shp"))
+  nms_ply <- get_nms_ply(nms)
+  
+  if (!file.exists(sites_nms_shp)){
+    sites_nms_pts <- sites_pts %>%
+      st_intersection(nms_ply)
+    write_sf(sites_nms_pts, sites_nms_shp)
+  }
+  sites_nms_pts <- read_sf(sites_nms_shp)
+  mapview(nms_ply) + sites_nms_pts
+}
+
+plot_intertidal_nms <- function(d_csv, NMS, spp, sp_name){
+
+  # read in csv with fields site, date, pct_cover
+  d <- read_csv(d_csv) %>%
+    filter(nms==NMS, sp==spp) %>%
+    select(-nms, -sp) %>%
+    spread(site, pct_cover) # View(d_sites)
+  
+  # line colors
+  ln_colors <- c(colorRampPalette(brewer.pal(11, "Set3"))(ncol(d)-2), "black")
+  
+  # convert to xts time object
+  x <- select(d, -date) %>%
+    as.xts(order.by=d$date)
+  
+  # plot dygraph
+  #browser()
+  dygraph(x, main=glue("{sp_name} in {NMS}")) %>%
+    dyOptions(
+      connectSeparatedPoints = TRUE,
+      colors = ln_colors) %>%
+    dySeries(NMS, strokeWidth = 3) %>%
+    dyHighlight(highlightSeriesOpts = list(strokeWidth = 2)) %>%
+    dyRangeSelector()
+}
+```
+
+```{r, eval=F}
+raw     <- read_csv(raw_csv)
+
+sites_pts <- raw %>%
+  rename(
+    site = marine_site_name) %>%
+  group_by(site) %>%
+  summarize(
+    lat = first(`latitude (degrees_north)`),
+    lon = first(`longitude (degrees_east)`)) %>%
+  st_as_sf(coords = c("lon", "lat"), crs = 4326)
+```
+
+## Rocky Intertidal Scene
+
+<img src="./rocky-intertidal.svg" alt="Rocky Intertidal Scene">
+
+## CINMS
+
+```{r}
+map_nms_sites("cinms")
+```
+
+### Acorn Barnacles
+
+```{r}
+plot_intertidal_nms(d_csv, "CINMS", "CHTBAL", "Acorn Barnacles")
+```
+
+### California Mussels
+
+```{r}
+plot_intertidal_nms(d_csv, "CINMS", "MYTCAL", "California Mussels")
+```
+
+## MBNMS
+
+```{r}
+map_nms_sites("mbnms")
+```
+
+### Acorn Barnacles
+
+```{r}
+plot_intertidal_nms(d_csv, "MBNMS", "CHTBAL", "Acorn Barnacles")
+```
+
+### California Mussels
+
+```{r}
+plot_intertidal_nms(d_csv, "MBNMS", "MYTCAL", "California Mussels")
+```
+
+
+```{r loop, eval=F}
+for (i in 1:length(sanctuaries)){
+  
+  # set sanctuary variables
+  nms <- sanctuaries[i] # nms <- "mbnms"
+  NMS <- str_to_upper(nms)
+  
+  # get sites in nms
+  sites_nms_shp <- here(glue("data/shp/{NMS}_sites.shp"))
+  if (!file.exists(sites_nms_shp)){
+    nms_ply <- get_nms_ply(nms)
+    sites_nms_pts <- sites_pts %>%
+      st_intersection(nms_ply)
+    write_sf(sites_nms_pts, sites_nms_shp)
+  }
+  sites_nms_pts <- read_sf(sites_nms_shp)
+  
+  # plot map of sanctuary and sites
+  #m <- mapview(nms_ply) + sites_nms_pts
+  #print(m)
+
+  # iterate over species
+  for (j in 1:nrow(spp)){
+    
+    # set species variables
+    sp        <- spp$sp[j]
+    sp_target <- spp$sp_target[j]
+    sp_name   <- spp$sp_name[j]
+    
+    # average across plots for each site-species-date
+    d_sites <- raw %>%
+      rename(
+        site = marine_site_name) %>%
+      filter(
+        site %in% sites_nms_pts$site,
+        lumping_code      == sp,
+        target_assemblage == sp_target) %>%
+      mutate(
+        date = ymd(`time (UTC)`)) %>%
+      group_by(site, date) %>%
+      summarize(
+        pct_cover = mean(percent_cover)) # View(d_sites)
+    
+    # average across sites to nms-year
+    d_nms <- d_sites %>%
+      mutate(
+        date = date(glue("{year(date)}-06-15"))) %>%
+      group_by(date) %>%
+      summarize(
+        pct_cover = mean(pct_cover)) %>%
+      ungroup() %>%
+      mutate(
+        site = NMS) # View(d_nms)
+    
+    # combine sites and sanctuary annual average
+    d <- bind_rows(
+      d_sites,
+      d_nms) %>%
+      mutate(
+        nms = NMS,
+        sp  = sp) # View(d)
+
+    # write data to csv
+    if (i == 1 & j == 1){
+      write_csv(d, d_csv)
+    } else {
+      write_csv(d, d_csv, append=T)
+    }
+    
+    # generate timeseries plot
+    #p <- plot_intertidal_nms(d_csv, NMS, sp_name)
+    #print(p)
+  }
+}
+```
+
+```{r, eval=F}
+devtools::load_all(here("../infographiq"))
+pwd <- here()
+create_info_site(
+  site_title       = "MARINe MBNMS",
+  path_root        =  pwd,
+  plot_function    = "plot_intertidal_nms",
+  dir_svg          = 'svg',
+  elements_csv     = 'svg_elements.csv',
+  indicators_csv   = 'plot_indicators.csv',
+  dir_rmd          = 'rmd',
+  dir_web          = 'docs',
+  #svg_paths        = list.files(file.path(path_root, dir_svg), '.*\\.svg$', full.names=T),
+  #svg_names        = tools::file_path_sans_ext(basename(svg_paths)),
+  site_yml_brew    = system.file('site_template/_site.yml.brew', package='infographiq'),
+  index_md_brew    = system.file('site_template/index.md.brew', package='infographiq'),
+  readme_md_brew   = system.file('site_template/README.md.brew', package='infographiq'),
+  header           = system.file('site_template/_header.html', package='infographiq'),
+  footer           = system.file('site_template/_footer.html', package='infographiq'),
+  styles_css       = system.file('site_template/styles.css', package='infographiq'),
+  render_modals    = T,
+  preview_site     = T)
+```
+
+
+```{r, eval=F, echo=F}
+## Notes
+
+# TO ADD in ppt:
+# 
+# - + Jenn Brown pic, MBON begin
+#   - IEA beautiful graphics, nice time-series. Bit of glue.
+# - Monterey Bay testimonial from Andrew De Vogeliere
+# - Brazil P2P
+# - decision-based management: oil spill, MPAs,
+# - sea star wasting disease
+# - rocky intertidal 
+# - + BOEM logo
+# - + SBNMS 
+meta_xlsx <- here("data/MARINe_meta.xlsx")
+sites_csv <- here("data/site_match.csv")
+region_sites <- read_xlsx(meta_xlsx, "region_sites")
+
+sites <- region_sites %>%
+  filter(region == rgn) %>%
+  .$site
+
+table(raw$target_assemblage)
+
+# plot(sites_sf)
+#   full_join(
+#     region_sites,
+#     by = c("marine_site_name"="site")) %>%
+#   arrange(marine_site_name) %>%
+#   write_csv(sites_csv, na = "")
+
+#raw_sites <- raw %>%
+
+# setdiff(sort(region_sites$site), raw_sites)
+# setdiff(raw_sites, sort(region_sites$site))
+# 
+# sites <- raw %>%
+#   group_by(marine_site_name) %>%
+#   summarize(
+#     lat = first(`latitude (degrees_north)`),
+#     lon = first(`longitude (degrees_east)`)) %>%
+#   full_join(
+#     region_sites,
+#     by = c("marine_site_name"="site")) %>%
+#   arrange(marine_site_name) %>%
+#   write_csv(sites_csv, na = "")
+# 
+# 
+# raw$
+# d_1 <- raw %>%
+#   filter(
+#     lumping_code == sp,
+#     marine_site_name %in% sites)
+# 
+# View(d_1)
+# table(d_mussels$marine_site_name)
+```
+
+
+
+
+
+
