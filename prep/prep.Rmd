@@ -105,7 +105,8 @@ map_nms_sites <- function(nms){
   }
   sites_nms_pts <- read_sf(sites_nms_shp)
   
-  mapview(nms_ply) + 
+  mapview(
+    nms_ply, legend = TRUE, layer.name = "Sanctuary", zcol = "SANCTUARY") + 
     mapview(
       sites_nms_pts, legend = TRUE, layer.name = "Site",
       zcol = "site", col.regions = colorRampPalette(brewer.pal(11, "Set3")))
