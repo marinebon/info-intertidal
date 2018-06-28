@@ -7,6 +7,8 @@ output:
     toc: true
     toc_float: true
     code_folding: hide
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, include=FALSE}
@@ -29,7 +31,10 @@ library(dygraphs) # devtools::install_github("rstudio/dygraphs")
 library(xts)
 devtools::load_all(here("../infographiq"))
 
-raw_csv <- here("data/MARINe_raw_4c1e_9218_7d13.csv")
+raw_csv   <- here("data/MARINe_raw_4c1e_9218_7d13.csv")
+sites_csv <- here("data/MARINe_sites.csv")
+
+# read_csv(raw_csv) %>% write_csv(here("data/MARINe_raw_4c1e_9218_7d13_head10k.csv"))
 
 # https://www.eeb.ucsc.edu/pacificrockyintertidal/target/index.html
 spp  <- tribble(
@@ -124,6 +129,13 @@ sites_pts <- raw %>%
     lat = first(`latitude (degrees_north)`),
     lon = first(`longitude (degrees_east)`)) %>%
   st_as_sf(coords = c("lon", "lat"), crs = 4326)
+
+sites_pts %>%
+  mutate(
+    lon = st_coordinates(geometry)[,1],
+    lat = st_coordinates(geometry)[,2]) %>%
+  st_set_geometry(NULL) %>%
+  write_csv(sites_csv)
 ```
 
 ## Rocky Intertidal Scene
@@ -165,6 +177,43 @@ plot_intertidal_nms(d_csv, "MBNMS", "CHTBAL", "Acorn Barnacles")
 ```{r}
 plot_intertidal_nms(d_csv, "MBNMS", "MYTCAL", "California Mussels")
 ```
+
+## Latitudinal Gradient
+
+```{r}
+
+sites_tbl <- read_csv(sites_csv)
+
+#plot_latitudinal_nms <- function(d_csv, NMS, spp, sp_name){
+NMS="MBNMS"; spp="MYTCAL"; sp_name="California Mussels"
+
+  # read in csv with fields site, date, pct_cover
+  d <- read_csv(d_csv) %>%
+    filter(nms==NMS, sp==spp) %>%
+    select(-nms, -sp) %>%
+    mutate(
+      yr = year(date)) %>%
+    group_by(site, yr) %>%
+    summarize(
+      pct_cover = mean(pct_cover)) %>%
+    left_join(
+      sites_tbl, by="site") %>%
+    select(site, yr, pct_cover, lon) %>%
+    arrange(lon, yr, pct_cover) # View(d)
+  
+  g <- ggplot(d, aes(x=lon, y=pct_cover, group=yr, color=yr)) +
+    geom_line() + 
+    scale_color_gradientn(colors=RColorBrewer::brewer.pal(11, "Spectral")) +
+    coord_flip() +
+    labs(title=glue("{sp_name} in {NMS}"))
+  
+  plotly::ggplotly(g)
+    #scale_x_log10()
+  
+#}
+
+```
+
 
 
 ```{r loop, eval=F}
