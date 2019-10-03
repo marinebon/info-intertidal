@@ -1,0 +1,49 @@
+sp,sp_name,n
+ANTELE,Anthopleura elegantissima/sola,625
+ARTCOR,Articulated Corallines,625
+BARNAC,Barnacles,51
+CHITON,Chitons,574
+CHOCAN,Chondracanthus canaliculatus,574
+CHTBAL,Chthamalus spp/Balanus glandula,574
+CLACOL,Cladophora columbiana,574
+CRUCOR,Crustose Corallines,625
+EGRMEN,Egregia menziesii,625
+EISARB,Eisenia arborea,625
+ENDMUR,Endocladia muricata,574
+ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,574
+FUCGAR,Fucus gardneri,574
+HALSTE,Halidrys dioica/Stephanosystis spp,625
+HEDSES,Hedophyllum sessile,30
+HESCAL,Hesperophycus californicus,574
+LIMPET,Limpets,574
+LOTGIG,Lottia gigantea,574
+MASSPP,Mastocarpus papillatus/jardinii,574
+MAZAFF,Mazzaella affinis,574
+MAZSPP,Mazzaella spp.,574
+MYTCAL,Mytilus californianus,625
+MYTTRO,Mytilus trossulus,574
+NEOLAR,Neorhodomela larix,70
+NONCRU,Non-coralline Crusts,625
+OTHALG,Other Algae/Plants,625
+OTHBAR,Other Barnacle,574
+OTHBRO,Other Brown Algae,625
+OTHGRE,Other Green Algae,625
+OTHINV,Other Invertebrate,625
+OTHRED,Other Red Algae,625
+OTHSUB,Other Substrate,625
+PELLIM,Pelvetiopsis limitata,574
+PHRSAB,Phragmatopoma/Sabellaria spp,625
+PHYSPP,Phyllospadix spp,625
+PHYUND,Phyllospadix spp understory,51
+PISOCH,Pisaster ochraceus,574
+POLPOL,Pollicipes polymerus,574
+PORSPP,Porphyra spp.,574
+ROCK,Rock,625
+SAND,Sand,625
+SARMUT,Sargassum muticum,625
+SCYSPP,Scytosiphon spp,574
+SEMCAR,Semibalanus cariosus,574
+SILCOM,Silvetia compressa,574
+TAR,Tar,625
+TETRUB,Tetraclita rubescens,574
+ULVENT,Ulva/Enteromorpha,574

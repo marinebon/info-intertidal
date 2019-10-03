@@ -1,0 +1,25 @@
+nms,info_id,sp_name,sp,sp_target,n
+cinms,algal-groups,Golden Rockweed,SILCOM,silvetia,36082
+cinms,algal-groups,Olive Rockweed,HESCAL,hesperophycus,19554
+cinms,algal-groups,Surfgrass,PHYOVR,phyllospadix,1100
+cinms,algal-groups,Turfweed,ENDMUR,endocladia,32699
+cinms,barnacles,Acorn Barnacles,CHTBAL,chthamalus_balanus|balanus,35543
+cinms,barnacles,Goose Barnacle,POLPOL,pollicipes,4150
+cinms,barnacles,Pink Barnacle,TETRUB,tetraclita,6454
+cinms,mussels,California Mussels,MYTCAL,mytilus,39693
+cinms,tar,Tar,TAR,tar,4150
+mbnms,algal-groups,Dwarf Rockweed,PELLIM,pelvetiopsis,2541
+mbnms,algal-groups,Golden Rockweed,SILCOM,silvetia,37675
+mbnms,algal-groups,Iridescent Weed,MAZSPP,mazzaella,5696
+mbnms,algal-groups,Northern Rockweed,FUCGAR,fucus,5568
+mbnms,algal-groups,Olive Rockweed,HESCAL,hesperophycus,6190
+mbnms,algal-groups,Surfgrass,PHYOVR,phyllospadix,8666
+mbnms,algal-groups,Turfweed,ENDMUR,endocladia,26050
+mbnms,algal-groups,Turkish Washcloth,MASPAP,mastocarpus,29780
+mbnms,barnacles,Acorn Barnacles,CHTBAL,chthamalus_balanus|balanus,13610
+mbnms,barnacles,Acorn Barnacles,CHTBAL,chthamalus_balanus|balanus,51881
+mbnms,mussels,California Mussels,MYTCAL,mytilus,41750
+ocnms,algal-groups,Dwarf Rockweed,PELLIM,pelvetiopsis,1980
+ocnms,algal-groups,Surfgrass,PHYOVR,phyllospadix,540
+ocnms,barnacles,Acorn Barnacles,CHTBAL,chthamalus_balanus|balanus,9475
+ocnms,mussels,California Mussels,MYTCAL,mytilus,9431

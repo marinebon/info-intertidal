@@ -31,10 +31,11 @@ library(dygraphs) # devtools::install_github("rstudio/dygraphs")
 library(xts)
 devtools::load_all(here("../infographiq"))
 
+#library(rerddap)
+# cannot use rerddap b/c login presently required
+
 raw_csv   <- here("data/MARINe_raw_4c1e_9218_7d13.csv")
 sites_csv <- here("data/MARINe_sites.csv")
-
-# read_csv(raw_csv) %>% write_csv(here("data/MARINe_raw_4c1e_9218_7d13_head10k.csv"))
 
 # https://www.eeb.ucsc.edu/pacificrockyintertidal/target/index.html
 spp  <- tribble(
@@ -221,6 +222,7 @@ NMS="MBNMS"; spp="MYTCAL"; sp_name="California Mussels"
 
 
 ```{r loop, eval=F}
+sanctuaries = c("cinms", "mbnms", "ocnms")
 for (i in 1:length(sanctuaries)){
   
   # set sanctuary variables
