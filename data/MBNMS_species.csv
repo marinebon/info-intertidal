@@ -1,49 +1,530 @@
-sp,sp_name,n
-ANTELE,Anthopleura elegantissima/sola,7531
-ARTCOR,Articulated Corallines,7531
-BARNAC,Barnacles,524
-CHITON,Chitons,6962
-CHOCAN,Chondracanthus canaliculatus,6962
-CHTBAL,Chthamalus spp/Balanus glandula,6962
-CLACOL,Cladophora columbiana,7007
-CRUCOR,Crustose Corallines,7486
-EGRMEN,Egregia menziesii,7531
-EISARB,Eisenia arborea,7404
-ENDMUR,Endocladia muricata,7007
-ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,6962
-FUCGAR,Fucus gardneri,7007
-HALSTE,Halidrys dioica/Stephanosystis spp,7486
-HEDSES,Hedophyllum sessile,169
-HESCAL,Hesperophycus californicus,6962
-LIMPET,Limpets,7007
-LOTGIG,Lottia gigantea,6962
-MASSPP,Mastocarpus papillatus/jardinii,7007
-MAZAFF,Mazzaella affinis,6962
-MAZSPP,Mazzaella spp.,7007
-MYTCAL,Mytilus californianus,7531
-MYTTRO,Mytilus trossulus,939
-NEOLAR,Neorhodomela larix,6630
-NONCRU,Non-coralline Crusts,7531
-OTHALG,Other Algae/Plants,7449
-OTHBAR,Other Barnacle,6257
-OTHBRO,Other Brown Algae,7531
-OTHGRE,Other Green Algae,7486
-OTHINV,Other Invertebrate,7531
-OTHRED,Other Red Algae,7531
-OTHSUB,Other Substrate,7398
-PELLIM,Pelvetiopsis limitata,6962
-PHRSAB,Phragmatopoma/Sabellaria spp,7486
-PHYSPP,Phyllospadix spp,7486
-PHYUND,Phyllospadix spp understory,524
-PISOCH,Pisaster ochraceus,7007
-POLPOL,Pollicipes polymerus,6962
-PORSPP,Porphyra spp.,7007
-ROCK,Rock,7531
-SAND,Sand,7531
-SARMUT,Sargassum muticum,7486
-SCYSPP,Scytosiphon spp,6962
-SEMCAR,Semibalanus cariosus,6585
-SILCOM,Silvetia compressa,6962
-TAR,Tar,7404
-TETRUB,Tetraclita rubescens,6962
-ULVENT,Ulva/Enteromorpha,7007
+sp,sp_name,sp_target,n
+ANTELE,Anthopleura elegantissima/sola,balanus,488
+ANTELE,Anthopleura elegantissima/sola,chthamalus_balanus,1715
+ANTELE,Anthopleura elegantissima/sola,endocladia,974
+ANTELE,Anthopleura elegantissima/sola,fucus,273
+ANTELE,Anthopleura elegantissima/sola,hesperophycus,150
+ANTELE,Anthopleura elegantissima/sola,mastocarpus,870
+ANTELE,Anthopleura elegantissima/sola,mazzaella,129
+ANTELE,Anthopleura elegantissima/sola,mytilus,1485
+ANTELE,Anthopleura elegantissima/sola,pelvetiopsis,201
+ANTELE,Anthopleura elegantissima/sola,phyllospadix,571
+ANTELE,Anthopleura elegantissima/sola,recovery,42
+ANTELE,Anthopleura elegantissima/sola,silvetia,1190
+ARTCOR,Articulated Corallines,balanus,488
+ARTCOR,Articulated Corallines,chthamalus_balanus,1715
+ARTCOR,Articulated Corallines,endocladia,974
+ARTCOR,Articulated Corallines,fucus,273
+ARTCOR,Articulated Corallines,hesperophycus,150
+ARTCOR,Articulated Corallines,mastocarpus,870
+ARTCOR,Articulated Corallines,mazzaella,129
+ARTCOR,Articulated Corallines,mytilus,1485
+ARTCOR,Articulated Corallines,pelvetiopsis,201
+ARTCOR,Articulated Corallines,phyllospadix,571
+ARTCOR,Articulated Corallines,recovery,42
+ARTCOR,Articulated Corallines,silvetia,1190
+BARNAC,Barnacles,phyllospadix,571
+CHITON,Chitons,balanus,488
+CHITON,Chitons,chthamalus_balanus,1715
+CHITON,Chitons,endocladia,953
+CHITON,Chitons,fucus,260
+CHITON,Chitons,hesperophycus,150
+CHITON,Chitons,mastocarpus,870
+CHITON,Chitons,mazzaella,129
+CHITON,Chitons,mytilus,1485
+CHITON,Chitons,pelvetiopsis,190
+CHITON,Chitons,recovery,42
+CHITON,Chitons,silvetia,1190
+CHOCAN,Chondracanthus canaliculatus,balanus,488
+CHOCAN,Chondracanthus canaliculatus,chthamalus_balanus,1715
+CHOCAN,Chondracanthus canaliculatus,endocladia,953
+CHOCAN,Chondracanthus canaliculatus,fucus,260
+CHOCAN,Chondracanthus canaliculatus,hesperophycus,150
+CHOCAN,Chondracanthus canaliculatus,mastocarpus,870
+CHOCAN,Chondracanthus canaliculatus,mazzaella,129
+CHOCAN,Chondracanthus canaliculatus,mytilus,1485
+CHOCAN,Chondracanthus canaliculatus,pelvetiopsis,190
+CHOCAN,Chondracanthus canaliculatus,recovery,42
+CHOCAN,Chondracanthus canaliculatus,silvetia,1190
+CHTBAL,Chthamalus spp/Balanus glandula,balanus,488
+CHTBAL,Chthamalus spp/Balanus glandula,chthamalus_balanus,1715
+CHTBAL,Chthamalus spp/Balanus glandula,endocladia,953
+CHTBAL,Chthamalus spp/Balanus glandula,fucus,260
+CHTBAL,Chthamalus spp/Balanus glandula,hesperophycus,150
+CHTBAL,Chthamalus spp/Balanus glandula,mastocarpus,870
+CHTBAL,Chthamalus spp/Balanus glandula,mazzaella,129
+CHTBAL,Chthamalus spp/Balanus glandula,mytilus,1485
+CHTBAL,Chthamalus spp/Balanus glandula,pelvetiopsis,190
+CHTBAL,Chthamalus spp/Balanus glandula,recovery,42
+CHTBAL,Chthamalus spp/Balanus glandula,silvetia,1190
+CLACOL,Cladophora columbiana,balanus,488
+CLACOL,Cladophora columbiana,chthamalus_balanus,1715
+CLACOL,Cladophora columbiana,endocladia,974
+CLACOL,Cladophora columbiana,fucus,273
+CLACOL,Cladophora columbiana,hesperophycus,150
+CLACOL,Cladophora columbiana,mastocarpus,870
+CLACOL,Cladophora columbiana,mazzaella,129
+CLACOL,Cladophora columbiana,mytilus,1485
+CLACOL,Cladophora columbiana,pelvetiopsis,201
+CLACOL,Cladophora columbiana,recovery,42
+CLACOL,Cladophora columbiana,silvetia,1190
+CRUCOR,Crustose Corallines,balanus,488
+CRUCOR,Crustose Corallines,chthamalus_balanus,1715
+CRUCOR,Crustose Corallines,endocladia,953
+CRUCOR,Crustose Corallines,fucus,260
+CRUCOR,Crustose Corallines,hesperophycus,150
+CRUCOR,Crustose Corallines,mastocarpus,870
+CRUCOR,Crustose Corallines,mazzaella,129
+CRUCOR,Crustose Corallines,mytilus,1485
+CRUCOR,Crustose Corallines,pelvetiopsis,190
+CRUCOR,Crustose Corallines,phyllospadix,571
+CRUCOR,Crustose Corallines,recovery,42
+CRUCOR,Crustose Corallines,silvetia,1190
+EGRMEN,Egregia menziesii,balanus,488
+EGRMEN,Egregia menziesii,chthamalus_balanus,1715
+EGRMEN,Egregia menziesii,endocladia,974
+EGRMEN,Egregia menziesii,fucus,273
+EGRMEN,Egregia menziesii,hesperophycus,150
+EGRMEN,Egregia menziesii,mastocarpus,870
+EGRMEN,Egregia menziesii,mazzaella,129
+EGRMEN,Egregia menziesii,mytilus,1485
+EGRMEN,Egregia menziesii,pelvetiopsis,201
+EGRMEN,Egregia menziesii,phyllospadix,571
+EGRMEN,Egregia menziesii,recovery,42
+EGRMEN,Egregia menziesii,silvetia,1190
+EISARB,Eisenia arborea,balanus,488
+EISARB,Eisenia arborea,chthamalus_balanus,1715
+EISARB,Eisenia arborea,endocladia,953
+EISARB,Eisenia arborea,fucus,260
+EISARB,Eisenia arborea,hesperophycus,150
+EISARB,Eisenia arborea,mastocarpus,870
+EISARB,Eisenia arborea,mazzaella,129
+EISARB,Eisenia arborea,mytilus,1485
+EISARB,Eisenia arborea,pelvetiopsis,190
+EISARB,Eisenia arborea,phyllospadix,489
+EISARB,Eisenia arborea,recovery,42
+EISARB,Eisenia arborea,silvetia,1190
+ENDMUR,Endocladia muricata,balanus,488
+ENDMUR,Endocladia muricata,chthamalus_balanus,1715
+ENDMUR,Endocladia muricata,endocladia,974
+ENDMUR,Endocladia muricata,fucus,273
+ENDMUR,Endocladia muricata,hesperophycus,150
+ENDMUR,Endocladia muricata,mastocarpus,870
+ENDMUR,Endocladia muricata,mazzaella,129
+ENDMUR,Endocladia muricata,mytilus,1485
+ENDMUR,Endocladia muricata,pelvetiopsis,201
+ENDMUR,Endocladia muricata,recovery,42
+ENDMUR,Endocladia muricata,silvetia,1190
+ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,balanus,488
+ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,chthamalus_balanus,1715
+ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,endocladia,953
+ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,fucus,260
+ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,hesperophycus,150
+ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,mastocarpus,870
+ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,mazzaella,129
+ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,mytilus,1485
+ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,pelvetiopsis,190
+ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,recovery,42
+ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,silvetia,1190
+FUCGAR,Fucus gardneri,balanus,488
+FUCGAR,Fucus gardneri,chthamalus_balanus,1715
+FUCGAR,Fucus gardneri,endocladia,974
+FUCGAR,Fucus gardneri,fucus,273
+FUCGAR,Fucus gardneri,hesperophycus,150
+FUCGAR,Fucus gardneri,mastocarpus,870
+FUCGAR,Fucus gardneri,mazzaella,129
+FUCGAR,Fucus gardneri,mytilus,1485
+FUCGAR,Fucus gardneri,pelvetiopsis,201
+FUCGAR,Fucus gardneri,recovery,42
+FUCGAR,Fucus gardneri,silvetia,1190
+HALSTE,Halidrys dioica/Stephanosystis spp,balanus,488
+HALSTE,Halidrys dioica/Stephanosystis spp,chthamalus_balanus,1715
+HALSTE,Halidrys dioica/Stephanosystis spp,endocladia,953
+HALSTE,Halidrys dioica/Stephanosystis spp,fucus,260
+HALSTE,Halidrys dioica/Stephanosystis spp,hesperophycus,150
+HALSTE,Halidrys dioica/Stephanosystis spp,mastocarpus,870
+HALSTE,Halidrys dioica/Stephanosystis spp,mazzaella,129
+HALSTE,Halidrys dioica/Stephanosystis spp,mytilus,1485
+HALSTE,Halidrys dioica/Stephanosystis spp,pelvetiopsis,190
+HALSTE,Halidrys dioica/Stephanosystis spp,phyllospadix,571
+HALSTE,Halidrys dioica/Stephanosystis spp,recovery,42
+HALSTE,Halidrys dioica/Stephanosystis spp,silvetia,1190
+HEDSES,Hedophyllum sessile,phyllospadix,210
+HESCAL,Hesperophycus californicus,balanus,488
+HESCAL,Hesperophycus californicus,chthamalus_balanus,1715
+HESCAL,Hesperophycus californicus,endocladia,953
+HESCAL,Hesperophycus californicus,fucus,260
+HESCAL,Hesperophycus californicus,hesperophycus,150
+HESCAL,Hesperophycus californicus,mastocarpus,870
+HESCAL,Hesperophycus californicus,mazzaella,129
+HESCAL,Hesperophycus californicus,mytilus,1485
+HESCAL,Hesperophycus californicus,pelvetiopsis,190
+HESCAL,Hesperophycus californicus,recovery,42
+HESCAL,Hesperophycus californicus,silvetia,1190
+LIMPET,Limpets,balanus,488
+LIMPET,Limpets,chthamalus_balanus,1715
+LIMPET,Limpets,endocladia,974
+LIMPET,Limpets,fucus,273
+LIMPET,Limpets,hesperophycus,150
+LIMPET,Limpets,mastocarpus,870
+LIMPET,Limpets,mazzaella,129
+LIMPET,Limpets,mytilus,1485
+LIMPET,Limpets,pelvetiopsis,201
+LIMPET,Limpets,recovery,42
+LIMPET,Limpets,silvetia,1190
+LOTGIG,Lottia gigantea,balanus,488
+LOTGIG,Lottia gigantea,chthamalus_balanus,1715
+LOTGIG,Lottia gigantea,endocladia,953
+LOTGIG,Lottia gigantea,fucus,260
+LOTGIG,Lottia gigantea,hesperophycus,150
+LOTGIG,Lottia gigantea,mastocarpus,870
+LOTGIG,Lottia gigantea,mazzaella,129
+LOTGIG,Lottia gigantea,mytilus,1485
+LOTGIG,Lottia gigantea,pelvetiopsis,190
+LOTGIG,Lottia gigantea,recovery,42
+LOTGIG,Lottia gigantea,silvetia,1190
+MASSPP,Mastocarpus papillatus/jardinii,balanus,488
+MASSPP,Mastocarpus papillatus/jardinii,chthamalus_balanus,1715
+MASSPP,Mastocarpus papillatus/jardinii,endocladia,974
+MASSPP,Mastocarpus papillatus/jardinii,fucus,273
+MASSPP,Mastocarpus papillatus/jardinii,hesperophycus,150
+MASSPP,Mastocarpus papillatus/jardinii,mastocarpus,870
+MASSPP,Mastocarpus papillatus/jardinii,mazzaella,129
+MASSPP,Mastocarpus papillatus/jardinii,mytilus,1485
+MASSPP,Mastocarpus papillatus/jardinii,pelvetiopsis,201
+MASSPP,Mastocarpus papillatus/jardinii,recovery,42
+MASSPP,Mastocarpus papillatus/jardinii,silvetia,1190
+MAZAFF,Mazzaella affinis,balanus,488
+MAZAFF,Mazzaella affinis,chthamalus_balanus,1715
+MAZAFF,Mazzaella affinis,endocladia,953
+MAZAFF,Mazzaella affinis,fucus,260
+MAZAFF,Mazzaella affinis,hesperophycus,150
+MAZAFF,Mazzaella affinis,mastocarpus,870
+MAZAFF,Mazzaella affinis,mazzaella,129
+MAZAFF,Mazzaella affinis,mytilus,1485
+MAZAFF,Mazzaella affinis,pelvetiopsis,190
+MAZAFF,Mazzaella affinis,recovery,42
+MAZAFF,Mazzaella affinis,silvetia,1190
+MAZSPP,Mazzaella spp.,balanus,488
+MAZSPP,Mazzaella spp.,chthamalus_balanus,1715
+MAZSPP,Mazzaella spp.,endocladia,974
+MAZSPP,Mazzaella spp.,fucus,273
+MAZSPP,Mazzaella spp.,hesperophycus,150
+MAZSPP,Mazzaella spp.,mastocarpus,870
+MAZSPP,Mazzaella spp.,mazzaella,129
+MAZSPP,Mazzaella spp.,mytilus,1485
+MAZSPP,Mazzaella spp.,pelvetiopsis,201
+MAZSPP,Mazzaella spp.,recovery,42
+MAZSPP,Mazzaella spp.,silvetia,1190
+MYTCAL,Mytilus californianus,balanus,488
+MYTCAL,Mytilus californianus,chthamalus_balanus,1715
+MYTCAL,Mytilus californianus,endocladia,974
+MYTCAL,Mytilus californianus,fucus,273
+MYTCAL,Mytilus californianus,hesperophycus,150
+MYTCAL,Mytilus californianus,mastocarpus,870
+MYTCAL,Mytilus californianus,mazzaella,129
+MYTCAL,Mytilus californianus,mytilus,1485
+MYTCAL,Mytilus californianus,pelvetiopsis,201
+MYTCAL,Mytilus californianus,phyllospadix,571
+MYTCAL,Mytilus californianus,recovery,42
+MYTCAL,Mytilus californianus,silvetia,1190
+MYTTRO,Mytilus trossulus,balanus,88
+MYTTRO,Mytilus trossulus,chthamalus_balanus,249
+MYTTRO,Mytilus trossulus,endocladia,176
+MYTTRO,Mytilus trossulus,fucus,60
+MYTTRO,Mytilus trossulus,hesperophycus,40
+MYTTRO,Mytilus trossulus,mastocarpus,185
+MYTTRO,Mytilus trossulus,mazzaella,20
+MYTTRO,Mytilus trossulus,mytilus,280
+MYTTRO,Mytilus trossulus,pelvetiopsis,30
+MYTTRO,Mytilus trossulus,recovery,6
+MYTTRO,Mytilus trossulus,silvetia,245
+NEOLAR,Neorhodomela larix,balanus,488
+NEOLAR,Neorhodomela larix,chthamalus_balanus,1598
+NEOLAR,Neorhodomela larix,endocladia,859
+NEOLAR,Neorhodomela larix,fucus,273
+NEOLAR,Neorhodomela larix,hesperophycus,150
+NEOLAR,Neorhodomela larix,mastocarpus,870
+NEOLAR,Neorhodomela larix,mazzaella,129
+NEOLAR,Neorhodomela larix,mytilus,1365
+NEOLAR,Neorhodomela larix,pelvetiopsis,141
+NEOLAR,Neorhodomela larix,recovery,42
+NEOLAR,Neorhodomela larix,silvetia,1190
+NONCRU,Non-coralline Crusts,balanus,488
+NONCRU,Non-coralline Crusts,chthamalus_balanus,1715
+NONCRU,Non-coralline Crusts,endocladia,974
+NONCRU,Non-coralline Crusts,fucus,273
+NONCRU,Non-coralline Crusts,hesperophycus,150
+NONCRU,Non-coralline Crusts,mastocarpus,870
+NONCRU,Non-coralline Crusts,mazzaella,129
+NONCRU,Non-coralline Crusts,mytilus,1485
+NONCRU,Non-coralline Crusts,pelvetiopsis,201
+NONCRU,Non-coralline Crusts,phyllospadix,571
+NONCRU,Non-coralline Crusts,recovery,42
+NONCRU,Non-coralline Crusts,silvetia,1190
+OTHALG,Other Algae/Plants,balanus,488
+OTHALG,Other Algae/Plants,chthamalus_balanus,1705
+OTHALG,Other Algae/Plants,endocladia,962
+OTHALG,Other Algae/Plants,fucus,273
+OTHALG,Other Algae/Plants,hesperophycus,150
+OTHALG,Other Algae/Plants,mastocarpus,870
+OTHALG,Other Algae/Plants,mazzaella,129
+OTHALG,Other Algae/Plants,mytilus,1475
+OTHALG,Other Algae/Plants,pelvetiopsis,196
+OTHALG,Other Algae/Plants,phyllospadix,458
+OTHALG,Other Algae/Plants,recovery,42
+OTHALG,Other Algae/Plants,silvetia,1190
+OTHBAR,Other Barnacle,balanus,388
+OTHBAR,Other Barnacle,chthamalus_balanus,1415
+OTHBAR,Other Barnacle,endocladia,919
+OTHBAR,Other Barnacle,fucus,245
+OTHBAR,Other Barnacle,hesperophycus,150
+OTHBAR,Other Barnacle,mastocarpus,840
+OTHBAR,Other Barnacle,mazzaella,129
+OTHBAR,Other Barnacle,mytilus,1375
+OTHBAR,Other Barnacle,pelvetiopsis,185
+OTHBAR,Other Barnacle,recovery,36
+OTHBAR,Other Barnacle,silvetia,1085
+OTHBRO,Other Brown Algae,balanus,488
+OTHBRO,Other Brown Algae,chthamalus_balanus,1715
+OTHBRO,Other Brown Algae,endocladia,974
+OTHBRO,Other Brown Algae,fucus,273
+OTHBRO,Other Brown Algae,hesperophycus,150
+OTHBRO,Other Brown Algae,mastocarpus,870
+OTHBRO,Other Brown Algae,mazzaella,129
+OTHBRO,Other Brown Algae,mytilus,1485
+OTHBRO,Other Brown Algae,pelvetiopsis,201
+OTHBRO,Other Brown Algae,phyllospadix,571
+OTHBRO,Other Brown Algae,recovery,42
+OTHBRO,Other Brown Algae,silvetia,1190
+OTHGRE,Other Green Algae,balanus,488
+OTHGRE,Other Green Algae,chthamalus_balanus,1715
+OTHGRE,Other Green Algae,endocladia,953
+OTHGRE,Other Green Algae,fucus,260
+OTHGRE,Other Green Algae,hesperophycus,150
+OTHGRE,Other Green Algae,mastocarpus,870
+OTHGRE,Other Green Algae,mazzaella,129
+OTHGRE,Other Green Algae,mytilus,1485
+OTHGRE,Other Green Algae,pelvetiopsis,190
+OTHGRE,Other Green Algae,phyllospadix,571
+OTHGRE,Other Green Algae,recovery,42
+OTHGRE,Other Green Algae,silvetia,1190
+OTHINV,Other Invertebrate,balanus,488
+OTHINV,Other Invertebrate,chthamalus_balanus,1715
+OTHINV,Other Invertebrate,endocladia,974
+OTHINV,Other Invertebrate,fucus,273
+OTHINV,Other Invertebrate,hesperophycus,150
+OTHINV,Other Invertebrate,mastocarpus,870
+OTHINV,Other Invertebrate,mazzaella,129
+OTHINV,Other Invertebrate,mytilus,1485
+OTHINV,Other Invertebrate,pelvetiopsis,201
+OTHINV,Other Invertebrate,phyllospadix,571
+OTHINV,Other Invertebrate,recovery,42
+OTHINV,Other Invertebrate,silvetia,1190
+OTHRED,Other Red Algae,balanus,488
+OTHRED,Other Red Algae,chthamalus_balanus,1715
+OTHRED,Other Red Algae,endocladia,974
+OTHRED,Other Red Algae,fucus,273
+OTHRED,Other Red Algae,hesperophycus,150
+OTHRED,Other Red Algae,mastocarpus,870
+OTHRED,Other Red Algae,mazzaella,129
+OTHRED,Other Red Algae,mytilus,1485
+OTHRED,Other Red Algae,pelvetiopsis,201
+OTHRED,Other Red Algae,phyllospadix,571
+OTHRED,Other Red Algae,recovery,42
+OTHRED,Other Red Algae,silvetia,1190
+OTHSUB,Other Substrate,balanus,488
+OTHSUB,Other Substrate,chthamalus_balanus,1715
+OTHSUB,Other Substrate,endocladia,953
+OTHSUB,Other Substrate,fucus,260
+OTHSUB,Other Substrate,hesperophycus,150
+OTHSUB,Other Substrate,mastocarpus,870
+OTHSUB,Other Substrate,mazzaella,129
+OTHSUB,Other Substrate,mytilus,1485
+OTHSUB,Other Substrate,pelvetiopsis,190
+OTHSUB,Other Substrate,phyllospadix,483
+OTHSUB,Other Substrate,recovery,42
+OTHSUB,Other Substrate,silvetia,1190
+PELLIM,Pelvetiopsis limitata,balanus,488
+PELLIM,Pelvetiopsis limitata,chthamalus_balanus,1715
+PELLIM,Pelvetiopsis limitata,endocladia,953
+PELLIM,Pelvetiopsis limitata,fucus,260
+PELLIM,Pelvetiopsis limitata,hesperophycus,150
+PELLIM,Pelvetiopsis limitata,mastocarpus,870
+PELLIM,Pelvetiopsis limitata,mazzaella,129
+PELLIM,Pelvetiopsis limitata,mytilus,1485
+PELLIM,Pelvetiopsis limitata,pelvetiopsis,190
+PELLIM,Pelvetiopsis limitata,recovery,42
+PELLIM,Pelvetiopsis limitata,silvetia,1190
+PHRSAB,Phragmatopoma/Sabellaria spp,balanus,488
+PHRSAB,Phragmatopoma/Sabellaria spp,chthamalus_balanus,1715
+PHRSAB,Phragmatopoma/Sabellaria spp,endocladia,953
+PHRSAB,Phragmatopoma/Sabellaria spp,fucus,260
+PHRSAB,Phragmatopoma/Sabellaria spp,hesperophycus,150
+PHRSAB,Phragmatopoma/Sabellaria spp,mastocarpus,870
+PHRSAB,Phragmatopoma/Sabellaria spp,mazzaella,129
+PHRSAB,Phragmatopoma/Sabellaria spp,mytilus,1485
+PHRSAB,Phragmatopoma/Sabellaria spp,pelvetiopsis,190
+PHRSAB,Phragmatopoma/Sabellaria spp,phyllospadix,571
+PHRSAB,Phragmatopoma/Sabellaria spp,recovery,42
+PHRSAB,Phragmatopoma/Sabellaria spp,silvetia,1190
+PHYSPP,Phyllospadix spp,balanus,488
+PHYSPP,Phyllospadix spp,chthamalus_balanus,1715
+PHYSPP,Phyllospadix spp,endocladia,953
+PHYSPP,Phyllospadix spp,fucus,260
+PHYSPP,Phyllospadix spp,hesperophycus,150
+PHYSPP,Phyllospadix spp,mastocarpus,870
+PHYSPP,Phyllospadix spp,mazzaella,129
+PHYSPP,Phyllospadix spp,mytilus,1485
+PHYSPP,Phyllospadix spp,pelvetiopsis,190
+PHYSPP,Phyllospadix spp,phyllospadix,571
+PHYSPP,Phyllospadix spp,recovery,42
+PHYSPP,Phyllospadix spp,silvetia,1190
+PISOCH,Pisaster ochraceus,balanus,488
+PISOCH,Pisaster ochraceus,chthamalus_balanus,1715
+PISOCH,Pisaster ochraceus,endocladia,974
+PISOCH,Pisaster ochraceus,fucus,273
+PISOCH,Pisaster ochraceus,hesperophycus,150
+PISOCH,Pisaster ochraceus,mastocarpus,870
+PISOCH,Pisaster ochraceus,mazzaella,129
+PISOCH,Pisaster ochraceus,mytilus,1485
+PISOCH,Pisaster ochraceus,pelvetiopsis,201
+PISOCH,Pisaster ochraceus,recovery,42
+PISOCH,Pisaster ochraceus,silvetia,1190
+POLPOL,Pollicipes polymerus,balanus,488
+POLPOL,Pollicipes polymerus,chthamalus_balanus,1715
+POLPOL,Pollicipes polymerus,endocladia,953
+POLPOL,Pollicipes polymerus,fucus,260
+POLPOL,Pollicipes polymerus,hesperophycus,150
+POLPOL,Pollicipes polymerus,mastocarpus,870
+POLPOL,Pollicipes polymerus,mazzaella,129
+POLPOL,Pollicipes polymerus,mytilus,1485
+POLPOL,Pollicipes polymerus,pelvetiopsis,190
+POLPOL,Pollicipes polymerus,recovery,42
+POLPOL,Pollicipes polymerus,silvetia,1190
+PORSPP,Porphyra spp.,balanus,488
+PORSPP,Porphyra spp.,chthamalus_balanus,1715
+PORSPP,Porphyra spp.,endocladia,974
+PORSPP,Porphyra spp.,fucus,273
+PORSPP,Porphyra spp.,hesperophycus,150
+PORSPP,Porphyra spp.,mastocarpus,870
+PORSPP,Porphyra spp.,mazzaella,129
+PORSPP,Porphyra spp.,mytilus,1485
+PORSPP,Porphyra spp.,pelvetiopsis,201
+PORSPP,Porphyra spp.,recovery,42
+PORSPP,Porphyra spp.,silvetia,1190
+ROCK,Rock,balanus,488
+ROCK,Rock,chthamalus_balanus,1715
+ROCK,Rock,endocladia,974
+ROCK,Rock,fucus,273
+ROCK,Rock,hesperophycus,150
+ROCK,Rock,mastocarpus,870
+ROCK,Rock,mazzaella,129
+ROCK,Rock,mytilus,1485
+ROCK,Rock,pelvetiopsis,201
+ROCK,Rock,phyllospadix,571
+ROCK,Rock,recovery,42
+ROCK,Rock,silvetia,1190
+SAND,Sand,balanus,488
+SAND,Sand,chthamalus_balanus,1715
+SAND,Sand,endocladia,974
+SAND,Sand,fucus,273
+SAND,Sand,hesperophycus,150
+SAND,Sand,mastocarpus,870
+SAND,Sand,mazzaella,129
+SAND,Sand,mytilus,1485
+SAND,Sand,pelvetiopsis,201
+SAND,Sand,phyllospadix,571
+SAND,Sand,recovery,42
+SAND,Sand,silvetia,1190
+SARMUT,Sargassum muticum,balanus,488
+SARMUT,Sargassum muticum,chthamalus_balanus,1715
+SARMUT,Sargassum muticum,endocladia,953
+SARMUT,Sargassum muticum,fucus,260
+SARMUT,Sargassum muticum,hesperophycus,150
+SARMUT,Sargassum muticum,mastocarpus,870
+SARMUT,Sargassum muticum,mazzaella,129
+SARMUT,Sargassum muticum,mytilus,1485
+SARMUT,Sargassum muticum,pelvetiopsis,190
+SARMUT,Sargassum muticum,phyllospadix,571
+SARMUT,Sargassum muticum,recovery,42
+SARMUT,Sargassum muticum,silvetia,1190
+SCYSPP,Scytosiphon/Melanosiphon spp,balanus,488
+SCYSPP,Scytosiphon/Melanosiphon spp,chthamalus_balanus,1715
+SCYSPP,Scytosiphon/Melanosiphon spp,endocladia,953
+SCYSPP,Scytosiphon/Melanosiphon spp,fucus,260
+SCYSPP,Scytosiphon/Melanosiphon spp,hesperophycus,150
+SCYSPP,Scytosiphon/Melanosiphon spp,mastocarpus,870
+SCYSPP,Scytosiphon/Melanosiphon spp,mazzaella,129
+SCYSPP,Scytosiphon/Melanosiphon spp,mytilus,1485
+SCYSPP,Scytosiphon/Melanosiphon spp,pelvetiopsis,190
+SCYSPP,Scytosiphon/Melanosiphon spp,recovery,42
+SCYSPP,Scytosiphon/Melanosiphon spp,silvetia,1190
+SEMCAR,Semibalanus cariosus,balanus,488
+SEMCAR,Semibalanus cariosus,chthamalus_balanus,1598
+SEMCAR,Semibalanus cariosus,endocladia,838
+SEMCAR,Semibalanus cariosus,fucus,260
+SEMCAR,Semibalanus cariosus,hesperophycus,150
+SEMCAR,Semibalanus cariosus,mastocarpus,870
+SEMCAR,Semibalanus cariosus,mazzaella,129
+SEMCAR,Semibalanus cariosus,mytilus,1365
+SEMCAR,Semibalanus cariosus,pelvetiopsis,130
+SEMCAR,Semibalanus cariosus,recovery,42
+SEMCAR,Semibalanus cariosus,silvetia,1190
+SEPBRA,Septifer bifurcatus; Brachidontes adamsianus,balanus,203
+SEPBRA,Septifer bifurcatus; Brachidontes adamsianus,chthamalus_balanus,663
+SEPBRA,Septifer bifurcatus; Brachidontes adamsianus,endocladia,474
+SEPBRA,Septifer bifurcatus; Brachidontes adamsianus,fucus,150
+SEPBRA,Septifer bifurcatus; Brachidontes adamsianus,hesperophycus,95
+SEPBRA,Septifer bifurcatus; Brachidontes adamsianus,mastocarpus,505
+SEPBRA,Septifer bifurcatus; Brachidontes adamsianus,mazzaella,80
+SEPBRA,Septifer bifurcatus; Brachidontes adamsianus,mytilus,780
+SEPBRA,Septifer bifurcatus; Brachidontes adamsianus,pelvetiopsis,75
+SEPBRA,Septifer bifurcatus; Brachidontes adamsianus,recovery,24
+SEPBRA,Septifer bifurcatus; Brachidontes adamsianus,silvetia,680
+SILCOM,Silvetia compressa,balanus,488
+SILCOM,Silvetia compressa,chthamalus_balanus,1715
+SILCOM,Silvetia compressa,endocladia,953
+SILCOM,Silvetia compressa,fucus,260
+SILCOM,Silvetia compressa,hesperophycus,150
+SILCOM,Silvetia compressa,mastocarpus,870
+SILCOM,Silvetia compressa,mazzaella,129
+SILCOM,Silvetia compressa,mytilus,1485
+SILCOM,Silvetia compressa,pelvetiopsis,190
+SILCOM,Silvetia compressa,recovery,42
+SILCOM,Silvetia compressa,silvetia,1190
+TAR,Tar,balanus,488
+TAR,Tar,chthamalus_balanus,1715
+TAR,Tar,endocladia,953
+TAR,Tar,fucus,260
+TAR,Tar,hesperophycus,150
+TAR,Tar,mastocarpus,870
+TAR,Tar,mazzaella,129
+TAR,Tar,mytilus,1485
+TAR,Tar,pelvetiopsis,190
+TAR,Tar,phyllospadix,489
+TAR,Tar,recovery,42
+TAR,Tar,silvetia,1190
+TETRUB,Tetraclita rubescens,balanus,488
+TETRUB,Tetraclita rubescens,chthamalus_balanus,1715
+TETRUB,Tetraclita rubescens,endocladia,953
+TETRUB,Tetraclita rubescens,fucus,260
+TETRUB,Tetraclita rubescens,hesperophycus,150
+TETRUB,Tetraclita rubescens,mastocarpus,870
+TETRUB,Tetraclita rubescens,mazzaella,129
+TETRUB,Tetraclita rubescens,mytilus,1485
+TETRUB,Tetraclita rubescens,pelvetiopsis,190
+TETRUB,Tetraclita rubescens,recovery,42
+TETRUB,Tetraclita rubescens,silvetia,1190
+ULVENT,Ulva/Enteromorpha,balanus,488
+ULVENT,Ulva/Enteromorpha,chthamalus_balanus,1715
+ULVENT,Ulva/Enteromorpha,endocladia,974
+ULVENT,Ulva/Enteromorpha,fucus,273
+ULVENT,Ulva/Enteromorpha,hesperophycus,150
+ULVENT,Ulva/Enteromorpha,mastocarpus,870
+ULVENT,Ulva/Enteromorpha,mazzaella,129
+ULVENT,Ulva/Enteromorpha,mytilus,1485
+ULVENT,Ulva/Enteromorpha,pelvetiopsis,201
+ULVENT,Ulva/Enteromorpha,recovery,42
+ULVENT,Ulva/Enteromorpha,silvetia,1190
+ZOSMAR,Zostera marina,phyllospadix,19

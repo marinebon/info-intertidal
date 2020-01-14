@@ -1,42 +1,430 @@
-sp,sp_name,n
-ANTELE,Anthopleura elegantissima/sola,9809
-ARTCOR,Articulated Corallines,9921
-BARNAC,Barnacles,54
-CHITON,Chitons,9778
-CHOCAN,Chondracanthus canaliculatus,9778
-CHTBAL,Chthamalus spp/Balanus glandula,9778
-CLACOL,Cladophora columbiana,9778
-CRUCOR,Crustose Corallines,9816
-EGRMEN,Egregia menziesii,9852
-EISARB,Eisenia arborea,1611
-ENDMUR,Endocladia muricata,9778
-ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,9778
-HALSTE,Halidrys dioica/Stephanosystis spp,9782
-HESCAL,Hesperophycus californicus,9778
-LIMPET,Limpets,9778
-LOTGIG,Lottia gigantea,9778
-MASSPP,Mastocarpus papillatus/jardinii,9778
-MAZAFF,Mazzaella affinis,9778
-MAZSPP,Mazzaella spp.,466
-MYTCAL,Mytilus californianus,9807
-NONCRU,Non-coralline Crusts,9787
-OTHBAR,Other Barnacle,8589
-OTHBRO,Other Brown Algae,9795
-OTHGRE,Other Green Algae,9827
-OTHINV,Other Invertebrate,9784
-OTHRED,Other Red Algae,9972
-OTHSUB,Other Substrate,300
-PHRSAB,Phragmatopoma/Sabellaria spp,9871
-PHYSPP,Phyllospadix spp,10024
-PHYUND,Phyllospadix spp understory,79
-PISOCH,Pisaster ochraceus,9778
-POLPOL,Pollicipes polymerus,9778
-PORSPP,Porphyra spp.,9778
-ROCK,Rock,9894
-SAND,Sand,9828
-SARMUT,Sargassum muticum,9329
-SCYSPP,Scytosiphon spp,9778
-SILCOM,Silvetia compressa,9778
-TAR,Tar,9779
-TETRUB,Tetraclita rubescens,9778
-ULVENT,Ulva/Enteromorpha,9778
+sp,sp_name,sp_target,n
+ANTELE,Anthopleura elegantissima/sola,chthamalus_balanus,2371
+ANTELE,Anthopleura elegantissima/sola,endocladia,2191
+ANTELE,Anthopleura elegantissima/sola,hesperophycus,985
+ANTELE,Anthopleura elegantissima/sola,mytilus,2575
+ANTELE,Anthopleura elegantissima/sola,phyllospadix,262
+ANTELE,Anthopleura elegantissima/sola,pollicipes,129
+ANTELE,Anthopleura elegantissima/sola,red_algae,60
+ANTELE,Anthopleura elegantissima/sola,rock,159
+ANTELE,Anthopleura elegantissima/sola,silvetia,2006
+ANTELE,Anthopleura elegantissima/sola,tar,125
+ANTELE,Anthopleura elegantissima/sola,tetraclita,339
+ARTCOR,Articulated Corallines,chthamalus_balanus,2375
+ARTCOR,Articulated Corallines,endocladia,2198
+ARTCOR,Articulated Corallines,hesperophycus,987
+ARTCOR,Articulated Corallines,mytilus,2598
+ARTCOR,Articulated Corallines,phyllospadix,266
+ARTCOR,Articulated Corallines,pollicipes,128
+ARTCOR,Articulated Corallines,red_algae,60
+ARTCOR,Articulated Corallines,rock,159
+ARTCOR,Articulated Corallines,silvetia,2016
+ARTCOR,Articulated Corallines,tar,125
+ARTCOR,Articulated Corallines,tetraclita,343
+BARNAC,Barnacles,phyllospadix,264
+CHITON,Chitons,chthamalus_balanus,2369
+CHITON,Chitons,endocladia,2190
+CHITON,Chitons,hesperophycus,985
+CHITON,Chitons,mytilus,2553
+CHITON,Chitons,pollicipes,126
+CHITON,Chitons,red_algae,60
+CHITON,Chitons,rock,159
+CHITON,Chitons,silvetia,1999
+CHITON,Chitons,tar,125
+CHITON,Chitons,tetraclita,341
+CHOCAN,Chondracanthus canaliculatus,chthamalus_balanus,2371
+CHOCAN,Chondracanthus canaliculatus,endocladia,2193
+CHOCAN,Chondracanthus canaliculatus,hesperophycus,987
+CHOCAN,Chondracanthus canaliculatus,mytilus,2551
+CHOCAN,Chondracanthus canaliculatus,pollicipes,125
+CHOCAN,Chondracanthus canaliculatus,red_algae,60
+CHOCAN,Chondracanthus canaliculatus,rock,159
+CHOCAN,Chondracanthus canaliculatus,silvetia,2003
+CHOCAN,Chondracanthus canaliculatus,tar,125
+CHOCAN,Chondracanthus canaliculatus,tetraclita,339
+CHTBAL,Chthamalus spp/Balanus glandula,chthamalus_balanus,2423
+CHTBAL,Chthamalus spp/Balanus glandula,endocladia,2226
+CHTBAL,Chthamalus spp/Balanus glandula,hesperophycus,1008
+CHTBAL,Chthamalus spp/Balanus glandula,mytilus,2551
+CHTBAL,Chthamalus spp/Balanus glandula,pollicipes,127
+CHTBAL,Chthamalus spp/Balanus glandula,red_algae,60
+CHTBAL,Chthamalus spp/Balanus glandula,rock,159
+CHTBAL,Chthamalus spp/Balanus glandula,silvetia,2030
+CHTBAL,Chthamalus spp/Balanus glandula,tar,130
+CHTBAL,Chthamalus spp/Balanus glandula,tetraclita,341
+CLACOL,Cladophora columbiana,chthamalus_balanus,2369
+CLACOL,Cladophora columbiana,endocladia,2189
+CLACOL,Cladophora columbiana,hesperophycus,986
+CLACOL,Cladophora columbiana,mytilus,2544
+CLACOL,Cladophora columbiana,pollicipes,125
+CLACOL,Cladophora columbiana,red_algae,60
+CLACOL,Cladophora columbiana,rock,159
+CLACOL,Cladophora columbiana,silvetia,2001
+CLACOL,Cladophora columbiana,tar,125
+CLACOL,Cladophora columbiana,tetraclita,339
+CRUCOR,Crustose Corallines,chthamalus_balanus,2378
+CRUCOR,Crustose Corallines,endocladia,2215
+CRUCOR,Crustose Corallines,hesperophycus,995
+CRUCOR,Crustose Corallines,mytilus,2592
+CRUCOR,Crustose Corallines,phyllospadix,266
+CRUCOR,Crustose Corallines,pollicipes,130
+CRUCOR,Crustose Corallines,red_algae,60
+CRUCOR,Crustose Corallines,rock,159
+CRUCOR,Crustose Corallines,silvetia,2029
+CRUCOR,Crustose Corallines,tar,125
+CRUCOR,Crustose Corallines,tetraclita,343
+EGRMEN,Egregia menziesii,chthamalus_balanus,2369
+EGRMEN,Egregia menziesii,endocladia,2189
+EGRMEN,Egregia menziesii,hesperophycus,984
+EGRMEN,Egregia menziesii,mytilus,2543
+EGRMEN,Egregia menziesii,phyllospadix,262
+EGRMEN,Egregia menziesii,pollicipes,125
+EGRMEN,Egregia menziesii,red_algae,60
+EGRMEN,Egregia menziesii,rock,159
+EGRMEN,Egregia menziesii,silvetia,1998
+EGRMEN,Egregia menziesii,tar,125
+EGRMEN,Egregia menziesii,tetraclita,339
+EISARB,Eisenia arborea,chthamalus_balanus,583
+EISARB,Eisenia arborea,endocladia,536
+EISARB,Eisenia arborea,hesperophycus,240
+EISARB,Eisenia arborea,mytilus,635
+EISARB,Eisenia arborea,phyllospadix,1
+EISARB,Eisenia arborea,pollicipes,30
+EISARB,Eisenia arborea,red_algae,5
+EISARB,Eisenia arborea,rock,94
+EISARB,Eisenia arborea,silvetia,485
+EISARB,Eisenia arborea,tar,30
+EISARB,Eisenia arborea,tetraclita,85
+ENDMUR,Endocladia muricata,chthamalus_balanus,2386
+ENDMUR,Endocladia muricata,endocladia,2246
+ENDMUR,Endocladia muricata,hesperophycus,1011
+ENDMUR,Endocladia muricata,mytilus,2545
+ENDMUR,Endocladia muricata,pollicipes,126
+ENDMUR,Endocladia muricata,red_algae,60
+ENDMUR,Endocladia muricata,rock,159
+ENDMUR,Endocladia muricata,silvetia,2035
+ENDMUR,Endocladia muricata,tar,126
+ENDMUR,Endocladia muricata,tetraclita,340
+ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,chthamalus_balanus,2374
+ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,endocladia,2190
+ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,hesperophycus,985
+ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,mytilus,2543
+ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,pollicipes,125
+ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,red_algae,60
+ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,rock,159
+ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,silvetia,2000
+ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,tar,125
+ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,tetraclita,339
+HALSTE,Halidrys dioica/Stephanosystis spp,chthamalus_balanus,2369
+HALSTE,Halidrys dioica/Stephanosystis spp,endocladia,2189
+HALSTE,Halidrys dioica/Stephanosystis spp,hesperophycus,984
+HALSTE,Halidrys dioica/Stephanosystis spp,mytilus,2543
+HALSTE,Halidrys dioica/Stephanosystis spp,phyllospadix,261
+HALSTE,Halidrys dioica/Stephanosystis spp,pollicipes,125
+HALSTE,Halidrys dioica/Stephanosystis spp,red_algae,60
+HALSTE,Halidrys dioica/Stephanosystis spp,rock,159
+HALSTE,Halidrys dioica/Stephanosystis spp,silvetia,1998
+HALSTE,Halidrys dioica/Stephanosystis spp,tar,125
+HALSTE,Halidrys dioica/Stephanosystis spp,tetraclita,339
+HESCAL,Hesperophycus californicus,chthamalus_balanus,2370
+HESCAL,Hesperophycus californicus,endocladia,2189
+HESCAL,Hesperophycus californicus,hesperophycus,1001
+HESCAL,Hesperophycus californicus,mytilus,2543
+HESCAL,Hesperophycus californicus,pollicipes,125
+HESCAL,Hesperophycus californicus,red_algae,60
+HESCAL,Hesperophycus californicus,rock,159
+HESCAL,Hesperophycus californicus,silvetia,2001
+HESCAL,Hesperophycus californicus,tar,125
+HESCAL,Hesperophycus californicus,tetraclita,339
+LIMPET,Limpets,chthamalus_balanus,2400
+LIMPET,Limpets,endocladia,2216
+LIMPET,Limpets,hesperophycus,990
+LIMPET,Limpets,mytilus,2554
+LIMPET,Limpets,pollicipes,126
+LIMPET,Limpets,red_algae,60
+LIMPET,Limpets,rock,159
+LIMPET,Limpets,silvetia,2018
+LIMPET,Limpets,tar,125
+LIMPET,Limpets,tetraclita,342
+LOTGIG,Lottia gigantea,chthamalus_balanus,2369
+LOTGIG,Lottia gigantea,endocladia,2191
+LOTGIG,Lottia gigantea,hesperophycus,984
+LOTGIG,Lottia gigantea,mytilus,2558
+LOTGIG,Lottia gigantea,pollicipes,125
+LOTGIG,Lottia gigantea,red_algae,60
+LOTGIG,Lottia gigantea,rock,159
+LOTGIG,Lottia gigantea,silvetia,1998
+LOTGIG,Lottia gigantea,tar,125
+LOTGIG,Lottia gigantea,tetraclita,342
+MASSPP,Mastocarpus papillatus/jardinii,chthamalus_balanus,2369
+MASSPP,Mastocarpus papillatus/jardinii,endocladia,2190
+MASSPP,Mastocarpus papillatus/jardinii,hesperophycus,984
+MASSPP,Mastocarpus papillatus/jardinii,mytilus,2543
+MASSPP,Mastocarpus papillatus/jardinii,pollicipes,125
+MASSPP,Mastocarpus papillatus/jardinii,red_algae,60
+MASSPP,Mastocarpus papillatus/jardinii,rock,159
+MASSPP,Mastocarpus papillatus/jardinii,silvetia,1998
+MASSPP,Mastocarpus papillatus/jardinii,tar,125
+MASSPP,Mastocarpus papillatus/jardinii,tetraclita,339
+MAZAFF,Mazzaella affinis,chthamalus_balanus,2374
+MAZAFF,Mazzaella affinis,endocladia,2212
+MAZAFF,Mazzaella affinis,hesperophycus,997
+MAZAFF,Mazzaella affinis,mytilus,2560
+MAZAFF,Mazzaella affinis,pollicipes,125
+MAZAFF,Mazzaella affinis,red_algae,60
+MAZAFF,Mazzaella affinis,rock,159
+MAZAFF,Mazzaella affinis,silvetia,2027
+MAZAFF,Mazzaella affinis,tar,125
+MAZAFF,Mazzaella affinis,tetraclita,339
+MAZSPP,Mazzaella spp.,chthamalus_balanus,102
+MAZSPP,Mazzaella spp.,endocladia,95
+MAZSPP,Mazzaella spp.,hesperophycus,40
+MAZSPP,Mazzaella spp.,mytilus,112
+MAZSPP,Mazzaella spp.,pollicipes,5
+MAZSPP,Mazzaella spp.,red_algae,5
+MAZSPP,Mazzaella spp.,silvetia,87
+MAZSPP,Mazzaella spp.,tar,5
+MAZSPP,Mazzaella spp.,tetraclita,15
+MYTCAL,Mytilus californianus,chthamalus_balanus,2378
+MYTCAL,Mytilus californianus,endocladia,2218
+MYTCAL,Mytilus californianus,hesperophycus,985
+MYTCAL,Mytilus californianus,mytilus,2610
+MYTCAL,Mytilus californianus,phyllospadix,264
+MYTCAL,Mytilus californianus,pollicipes,130
+MYTCAL,Mytilus californianus,red_algae,60
+MYTCAL,Mytilus californianus,rock,159
+MYTCAL,Mytilus californianus,silvetia,2015
+MYTCAL,Mytilus californianus,tar,125
+MYTCAL,Mytilus californianus,tetraclita,343
+MYTTRO,Mytilus trossulus,chthamalus_balanus,41
+MYTTRO,Mytilus trossulus,endocladia,29
+MYTTRO,Mytilus trossulus,hesperophycus,11
+MYTTRO,Mytilus trossulus,mytilus,40
+MYTTRO,Mytilus trossulus,silvetia,35
+MYTTRO,Mytilus trossulus,tetraclita,10
+NONCRU,Non-coralline Crusts,chthamalus_balanus,2386
+NONCRU,Non-coralline Crusts,endocladia,2221
+NONCRU,Non-coralline Crusts,hesperophycus,1002
+NONCRU,Non-coralline Crusts,mytilus,2561
+NONCRU,Non-coralline Crusts,phyllospadix,262
+NONCRU,Non-coralline Crusts,pollicipes,125
+NONCRU,Non-coralline Crusts,red_algae,60
+NONCRU,Non-coralline Crusts,rock,159
+NONCRU,Non-coralline Crusts,silvetia,2037
+NONCRU,Non-coralline Crusts,tar,125
+NONCRU,Non-coralline Crusts,tetraclita,344
+OTHBAR,Other Barnacle,chthamalus_balanus,1874
+OTHBAR,Other Barnacle,endocladia,1736
+OTHBAR,Other Barnacle,hesperophycus,775
+OTHBAR,Other Barnacle,mytilus,2005
+OTHBAR,Other Barnacle,pollicipes,100
+OTHBAR,Other Barnacle,red_algae,60
+OTHBAR,Other Barnacle,rock,90
+OTHBAR,Other Barnacle,silvetia,1590
+OTHBAR,Other Barnacle,tar,100
+OTHBAR,Other Barnacle,tetraclita,259
+OTHBRO,Other Brown Algae,chthamalus_balanus,2369
+OTHBRO,Other Brown Algae,endocladia,2189
+OTHBRO,Other Brown Algae,hesperophycus,984
+OTHBRO,Other Brown Algae,mytilus,2542
+OTHBRO,Other Brown Algae,phyllospadix,262
+OTHBRO,Other Brown Algae,pollicipes,125
+OTHBRO,Other Brown Algae,red_algae,60
+OTHBRO,Other Brown Algae,rock,159
+OTHBRO,Other Brown Algae,silvetia,1998
+OTHBRO,Other Brown Algae,tar,125
+OTHBRO,Other Brown Algae,tetraclita,339
+OTHGRE,Other Green Algae,chthamalus_balanus,2369
+OTHGRE,Other Green Algae,endocladia,2189
+OTHGRE,Other Green Algae,hesperophycus,984
+OTHGRE,Other Green Algae,mytilus,2543
+OTHGRE,Other Green Algae,phyllospadix,263
+OTHGRE,Other Green Algae,pollicipes,125
+OTHGRE,Other Green Algae,red_algae,60
+OTHGRE,Other Green Algae,rock,159
+OTHGRE,Other Green Algae,silvetia,1998
+OTHGRE,Other Green Algae,tar,125
+OTHGRE,Other Green Algae,tetraclita,339
+OTHINV,Other Invertebrate,chthamalus_balanus,2369
+OTHINV,Other Invertebrate,endocladia,2190
+OTHINV,Other Invertebrate,hesperophycus,984
+OTHINV,Other Invertebrate,mytilus,2543
+OTHINV,Other Invertebrate,phyllospadix,261
+OTHINV,Other Invertebrate,pollicipes,125
+OTHINV,Other Invertebrate,red_algae,60
+OTHINV,Other Invertebrate,rock,159
+OTHINV,Other Invertebrate,silvetia,1998
+OTHINV,Other Invertebrate,tar,125
+OTHINV,Other Invertebrate,tetraclita,339
+OTHRED,Other Red Algae,chthamalus_balanus,2375
+OTHRED,Other Red Algae,endocladia,2196
+OTHRED,Other Red Algae,hesperophycus,989
+OTHRED,Other Red Algae,mytilus,2549
+OTHRED,Other Red Algae,phyllospadix,269
+OTHRED,Other Red Algae,pollicipes,125
+OTHRED,Other Red Algae,red_algae,60
+OTHRED,Other Red Algae,rock,159
+OTHRED,Other Red Algae,silvetia,2008
+OTHRED,Other Red Algae,tar,125
+OTHRED,Other Red Algae,tetraclita,340
+OTHSUB,Other Substrate,chthamalus_balanus,335
+OTHSUB,Other Substrate,endocladia,294
+OTHSUB,Other Substrate,hesperophycus,137
+OTHSUB,Other Substrate,mytilus,341
+OTHSUB,Other Substrate,pollicipes,15
+OTHSUB,Other Substrate,rock,39
+OTHSUB,Other Substrate,silvetia,267
+OTHSUB,Other Substrate,tar,15
+OTHSUB,Other Substrate,tetraclita,51
+PELLIM,Pelvetiopsis limitata,chthamalus_balanus,130
+PELLIM,Pelvetiopsis limitata,endocladia,130
+PELLIM,Pelvetiopsis limitata,hesperophycus,130
+PELLIM,Pelvetiopsis limitata,mytilus,128
+PELLIM,Pelvetiopsis limitata,silvetia,1
+PELLIM,Pelvetiopsis limitata,tetraclita,130
+PHRSAB,Phragmatopoma/Sabellaria spp,chthamalus_balanus,2374
+PHRSAB,Phragmatopoma/Sabellaria spp,endocladia,2192
+PHRSAB,Phragmatopoma/Sabellaria spp,hesperophycus,986
+PHRSAB,Phragmatopoma/Sabellaria spp,mytilus,2585
+PHRSAB,Phragmatopoma/Sabellaria spp,phyllospadix,266
+PHRSAB,Phragmatopoma/Sabellaria spp,pollicipes,129
+PHRSAB,Phragmatopoma/Sabellaria spp,red_algae,60
+PHRSAB,Phragmatopoma/Sabellaria spp,rock,159
+PHRSAB,Phragmatopoma/Sabellaria spp,silvetia,2009
+PHRSAB,Phragmatopoma/Sabellaria spp,tar,125
+PHRSAB,Phragmatopoma/Sabellaria spp,tetraclita,339
+PHYSPP,Phyllospadix spp,chthamalus_balanus,2369
+PHYSPP,Phyllospadix spp,endocladia,2189
+PHYSPP,Phyllospadix spp,hesperophycus,984
+PHYSPP,Phyllospadix spp,mytilus,2543
+PHYSPP,Phyllospadix spp,phyllospadix,273
+PHYSPP,Phyllospadix spp,pollicipes,125
+PHYSPP,Phyllospadix spp,red_algae,60
+PHYSPP,Phyllospadix spp,rock,159
+PHYSPP,Phyllospadix spp,silvetia,1999
+PHYSPP,Phyllospadix spp,tar,125
+PHYSPP,Phyllospadix spp,tetraclita,339
+PISOCH,Pisaster ochraceus,chthamalus_balanus,2369
+PISOCH,Pisaster ochraceus,endocladia,2189
+PISOCH,Pisaster ochraceus,hesperophycus,984
+PISOCH,Pisaster ochraceus,mytilus,2543
+PISOCH,Pisaster ochraceus,pollicipes,125
+PISOCH,Pisaster ochraceus,red_algae,60
+PISOCH,Pisaster ochraceus,rock,159
+PISOCH,Pisaster ochraceus,silvetia,1998
+PISOCH,Pisaster ochraceus,tar,125
+PISOCH,Pisaster ochraceus,tetraclita,339
+POLPOL,Pollicipes polymerus,chthamalus_balanus,2369
+POLPOL,Pollicipes polymerus,endocladia,2201
+POLPOL,Pollicipes polymerus,hesperophycus,984
+POLPOL,Pollicipes polymerus,mytilus,2581
+POLPOL,Pollicipes polymerus,pollicipes,130
+POLPOL,Pollicipes polymerus,red_algae,60
+POLPOL,Pollicipes polymerus,rock,159
+POLPOL,Pollicipes polymerus,silvetia,2005
+POLPOL,Pollicipes polymerus,tar,125
+POLPOL,Pollicipes polymerus,tetraclita,340
+PORSPP,Porphyra spp.,chthamalus_balanus,2372
+PORSPP,Porphyra spp.,endocladia,2193
+PORSPP,Porphyra spp.,hesperophycus,984
+PORSPP,Porphyra spp.,mytilus,2543
+PORSPP,Porphyra spp.,pollicipes,125
+PORSPP,Porphyra spp.,red_algae,60
+PORSPP,Porphyra spp.,rock,159
+PORSPP,Porphyra spp.,silvetia,2002
+PORSPP,Porphyra spp.,tar,127
+PORSPP,Porphyra spp.,tetraclita,339
+ROCK,Rock,chthamalus_balanus,2427
+ROCK,Rock,endocladia,2249
+ROCK,Rock,hesperophycus,1014
+ROCK,Rock,mytilus,2607
+ROCK,Rock,phyllospadix,266
+ROCK,Rock,pollicipes,130
+ROCK,Rock,red_algae,60
+ROCK,Rock,rock,169
+ROCK,Rock,silvetia,2046
+ROCK,Rock,tar,130
+ROCK,Rock,tetraclita,344
+SAND,Sand,chthamalus_balanus,2369
+SAND,Sand,endocladia,2189
+SAND,Sand,hesperophycus,984
+SAND,Sand,mytilus,2543
+SAND,Sand,phyllospadix,261
+SAND,Sand,pollicipes,125
+SAND,Sand,red_algae,60
+SAND,Sand,rock,159
+SAND,Sand,silvetia,1999
+SAND,Sand,tar,125
+SAND,Sand,tetraclita,339
+SARMUT,Sargassum muticum,chthamalus_balanus,2267
+SARMUT,Sargassum muticum,endocladia,2097
+SARMUT,Sargassum muticum,hesperophycus,944
+SARMUT,Sargassum muticum,mytilus,2437
+SARMUT,Sargassum muticum,phyllospadix,261
+SARMUT,Sargassum muticum,pollicipes,120
+SARMUT,Sargassum muticum,red_algae,55
+SARMUT,Sargassum muticum,rock,159
+SARMUT,Sargassum muticum,silvetia,1912
+SARMUT,Sargassum muticum,tar,120
+SARMUT,Sargassum muticum,tetraclita,324
+SCYSPP,Scytosiphon/Melanosiphon spp,chthamalus_balanus,2371
+SCYSPP,Scytosiphon/Melanosiphon spp,endocladia,2190
+SCYSPP,Scytosiphon/Melanosiphon spp,hesperophycus,986
+SCYSPP,Scytosiphon/Melanosiphon spp,mytilus,2543
+SCYSPP,Scytosiphon/Melanosiphon spp,pollicipes,125
+SCYSPP,Scytosiphon/Melanosiphon spp,red_algae,60
+SCYSPP,Scytosiphon/Melanosiphon spp,rock,159
+SCYSPP,Scytosiphon/Melanosiphon spp,silvetia,2001
+SCYSPP,Scytosiphon/Melanosiphon spp,tar,125
+SCYSPP,Scytosiphon/Melanosiphon spp,tetraclita,339
+SEPBRA,Septifer bifurcatus; Brachidontes adamsianus,chthamalus_balanus,2375
+SEPBRA,Septifer bifurcatus; Brachidontes adamsianus,endocladia,2197
+SEPBRA,Septifer bifurcatus; Brachidontes adamsianus,hesperophycus,989
+SEPBRA,Septifer bifurcatus; Brachidontes adamsianus,mytilus,2543
+SEPBRA,Septifer bifurcatus; Brachidontes adamsianus,pollicipes,125
+SEPBRA,Septifer bifurcatus; Brachidontes adamsianus,red_algae,60
+SEPBRA,Septifer bifurcatus; Brachidontes adamsianus,rock,159
+SEPBRA,Septifer bifurcatus; Brachidontes adamsianus,silvetia,2005
+SEPBRA,Septifer bifurcatus; Brachidontes adamsianus,tar,125
+SEPBRA,Septifer bifurcatus; Brachidontes adamsianus,tetraclita,339
+SILCOM,Silvetia compressa,chthamalus_balanus,2374
+SILCOM,Silvetia compressa,endocladia,2199
+SILCOM,Silvetia compressa,hesperophycus,997
+SILCOM,Silvetia compressa,mytilus,2543
+SILCOM,Silvetia compressa,pollicipes,125
+SILCOM,Silvetia compressa,red_algae,60
+SILCOM,Silvetia compressa,rock,159
+SILCOM,Silvetia compressa,silvetia,2023
+SILCOM,Silvetia compressa,tar,125
+SILCOM,Silvetia compressa,tetraclita,339
+TAR,Tar,chthamalus_balanus,2375
+TAR,Tar,endocladia,2190
+TAR,Tar,hesperophycus,985
+TAR,Tar,mytilus,2543
+TAR,Tar,phyllospadix,261
+TAR,Tar,pollicipes,125
+TAR,Tar,red_algae,60
+TAR,Tar,rock,159
+TAR,Tar,silvetia,1999
+TAR,Tar,tar,130
+TAR,Tar,tetraclita,339
+TETRUB,Tetraclita rubescens,chthamalus_balanus,2374
+TETRUB,Tetraclita rubescens,endocladia,2202
+TETRUB,Tetraclita rubescens,hesperophycus,984
+TETRUB,Tetraclita rubescens,mytilus,2572
+TETRUB,Tetraclita rubescens,pollicipes,127
+TETRUB,Tetraclita rubescens,red_algae,60
+TETRUB,Tetraclita rubescens,rock,159
+TETRUB,Tetraclita rubescens,silvetia,2009
+TETRUB,Tetraclita rubescens,tar,125
+TETRUB,Tetraclita rubescens,tetraclita,344
+ULVENT,Ulva/Enteromorpha,chthamalus_balanus,2373
+ULVENT,Ulva/Enteromorpha,endocladia,2190
+ULVENT,Ulva/Enteromorpha,hesperophycus,987
+ULVENT,Ulva/Enteromorpha,mytilus,2544
+ULVENT,Ulva/Enteromorpha,pollicipes,125
+ULVENT,Ulva/Enteromorpha,red_algae,60
+ULVENT,Ulva/Enteromorpha,rock,159
+ULVENT,Ulva/Enteromorpha,silvetia,2003
+ULVENT,Ulva/Enteromorpha,tar,125
+ULVENT,Ulva/Enteromorpha,tetraclita,339

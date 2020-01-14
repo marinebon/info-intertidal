@@ -1,49 +1,160 @@
-sp,sp_name,n
-ANTELE,Anthopleura elegantissima/sola,625
-ARTCOR,Articulated Corallines,625
-BARNAC,Barnacles,51
-CHITON,Chitons,574
-CHOCAN,Chondracanthus canaliculatus,574
-CHTBAL,Chthamalus spp/Balanus glandula,574
-CLACOL,Cladophora columbiana,574
-CRUCOR,Crustose Corallines,625
-EGRMEN,Egregia menziesii,625
-EISARB,Eisenia arborea,625
-ENDMUR,Endocladia muricata,574
-ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,574
-FUCGAR,Fucus gardneri,574
-HALSTE,Halidrys dioica/Stephanosystis spp,625
-HEDSES,Hedophyllum sessile,30
-HESCAL,Hesperophycus californicus,574
-LIMPET,Limpets,574
-LOTGIG,Lottia gigantea,574
-MASSPP,Mastocarpus papillatus/jardinii,574
-MAZAFF,Mazzaella affinis,574
-MAZSPP,Mazzaella spp.,574
-MYTCAL,Mytilus californianus,625
-MYTTRO,Mytilus trossulus,574
-NEOLAR,Neorhodomela larix,70
-NONCRU,Non-coralline Crusts,625
-OTHALG,Other Algae/Plants,625
-OTHBAR,Other Barnacle,574
-OTHBRO,Other Brown Algae,625
-OTHGRE,Other Green Algae,625
-OTHINV,Other Invertebrate,625
-OTHRED,Other Red Algae,625
-OTHSUB,Other Substrate,625
-PELLIM,Pelvetiopsis limitata,574
-PHRSAB,Phragmatopoma/Sabellaria spp,625
-PHYSPP,Phyllospadix spp,625
-PHYUND,Phyllospadix spp understory,51
-PISOCH,Pisaster ochraceus,574
-POLPOL,Pollicipes polymerus,574
-PORSPP,Porphyra spp.,574
-ROCK,Rock,625
-SAND,Sand,625
-SARMUT,Sargassum muticum,625
-SCYSPP,Scytosiphon spp,574
-SEMCAR,Semibalanus cariosus,574
-SILCOM,Silvetia compressa,574
-TAR,Tar,625
-TETRUB,Tetraclita rubescens,574
-ULVENT,Ulva/Enteromorpha,574
+sp,sp_name,sp_target,n
+ANTELE,Anthopleura elegantissima/sola,balanus,345
+ANTELE,Anthopleura elegantissima/sola,mytilus,344
+ANTELE,Anthopleura elegantissima/sola,pelvetiopsis,60
+ANTELE,Anthopleura elegantissima/sola,phyllospadix,69
+ARTCOR,Articulated Corallines,balanus,345
+ARTCOR,Articulated Corallines,mytilus,344
+ARTCOR,Articulated Corallines,pelvetiopsis,60
+ARTCOR,Articulated Corallines,phyllospadix,69
+BARNAC,Barnacles,phyllospadix,69
+CHITON,Chitons,balanus,345
+CHITON,Chitons,mytilus,344
+CHITON,Chitons,pelvetiopsis,60
+CHOCAN,Chondracanthus canaliculatus,balanus,345
+CHOCAN,Chondracanthus canaliculatus,mytilus,344
+CHOCAN,Chondracanthus canaliculatus,pelvetiopsis,60
+CHTBAL,Chthamalus spp/Balanus glandula,balanus,345
+CHTBAL,Chthamalus spp/Balanus glandula,mytilus,344
+CHTBAL,Chthamalus spp/Balanus glandula,pelvetiopsis,60
+CLACOL,Cladophora columbiana,balanus,345
+CLACOL,Cladophora columbiana,mytilus,344
+CLACOL,Cladophora columbiana,pelvetiopsis,60
+CRUCOR,Crustose Corallines,balanus,345
+CRUCOR,Crustose Corallines,mytilus,344
+CRUCOR,Crustose Corallines,pelvetiopsis,60
+CRUCOR,Crustose Corallines,phyllospadix,69
+EGRMEN,Egregia menziesii,balanus,345
+EGRMEN,Egregia menziesii,mytilus,344
+EGRMEN,Egregia menziesii,pelvetiopsis,60
+EGRMEN,Egregia menziesii,phyllospadix,69
+EISARB,Eisenia arborea,balanus,345
+EISARB,Eisenia arborea,mytilus,344
+EISARB,Eisenia arborea,pelvetiopsis,60
+EISARB,Eisenia arborea,phyllospadix,69
+ENDMUR,Endocladia muricata,balanus,345
+ENDMUR,Endocladia muricata,mytilus,344
+ENDMUR,Endocladia muricata,pelvetiopsis,60
+ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,balanus,345
+ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,mytilus,344
+ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,pelvetiopsis,60
+FUCGAR,Fucus gardneri,balanus,345
+FUCGAR,Fucus gardneri,mytilus,344
+FUCGAR,Fucus gardneri,pelvetiopsis,60
+HALSTE,Halidrys dioica/Stephanosystis spp,balanus,345
+HALSTE,Halidrys dioica/Stephanosystis spp,mytilus,344
+HALSTE,Halidrys dioica/Stephanosystis spp,pelvetiopsis,60
+HALSTE,Halidrys dioica/Stephanosystis spp,phyllospadix,69
+HEDSES,Hedophyllum sessile,phyllospadix,30
+HESCAL,Hesperophycus californicus,balanus,345
+HESCAL,Hesperophycus californicus,mytilus,344
+HESCAL,Hesperophycus californicus,pelvetiopsis,60
+LIMPET,Limpets,balanus,345
+LIMPET,Limpets,mytilus,344
+LIMPET,Limpets,pelvetiopsis,60
+LOTGIG,Lottia gigantea,balanus,345
+LOTGIG,Lottia gigantea,mytilus,344
+LOTGIG,Lottia gigantea,pelvetiopsis,60
+MASSPP,Mastocarpus papillatus/jardinii,balanus,345
+MASSPP,Mastocarpus papillatus/jardinii,mytilus,344
+MASSPP,Mastocarpus papillatus/jardinii,pelvetiopsis,60
+MAZAFF,Mazzaella affinis,balanus,345
+MAZAFF,Mazzaella affinis,mytilus,344
+MAZAFF,Mazzaella affinis,pelvetiopsis,60
+MAZSPP,Mazzaella spp.,balanus,345
+MAZSPP,Mazzaella spp.,mytilus,344
+MAZSPP,Mazzaella spp.,pelvetiopsis,60
+MYTCAL,Mytilus californianus,balanus,345
+MYTCAL,Mytilus californianus,mytilus,344
+MYTCAL,Mytilus californianus,pelvetiopsis,60
+MYTCAL,Mytilus californianus,phyllospadix,69
+MYTTRO,Mytilus trossulus,balanus,345
+MYTTRO,Mytilus trossulus,mytilus,344
+MYTTRO,Mytilus trossulus,pelvetiopsis,60
+NEOLAR,Neorhodomela larix,balanus,285
+NEOLAR,Neorhodomela larix,mytilus,285
+NEOLAR,Neorhodomela larix,pelvetiopsis,60
+NONCRU,Non-coralline Crusts,balanus,345
+NONCRU,Non-coralline Crusts,mytilus,344
+NONCRU,Non-coralline Crusts,pelvetiopsis,60
+NONCRU,Non-coralline Crusts,phyllospadix,69
+OTHALG,Other Algae/Plants,balanus,345
+OTHALG,Other Algae/Plants,mytilus,344
+OTHALG,Other Algae/Plants,pelvetiopsis,60
+OTHALG,Other Algae/Plants,phyllospadix,57
+OTHBAR,Other Barnacle,balanus,345
+OTHBAR,Other Barnacle,mytilus,344
+OTHBAR,Other Barnacle,pelvetiopsis,60
+OTHBRO,Other Brown Algae,balanus,345
+OTHBRO,Other Brown Algae,mytilus,344
+OTHBRO,Other Brown Algae,pelvetiopsis,60
+OTHBRO,Other Brown Algae,phyllospadix,69
+OTHGRE,Other Green Algae,balanus,345
+OTHGRE,Other Green Algae,mytilus,344
+OTHGRE,Other Green Algae,pelvetiopsis,60
+OTHGRE,Other Green Algae,phyllospadix,69
+OTHINV,Other Invertebrate,balanus,345
+OTHINV,Other Invertebrate,mytilus,344
+OTHINV,Other Invertebrate,pelvetiopsis,60
+OTHINV,Other Invertebrate,phyllospadix,69
+OTHRED,Other Red Algae,balanus,345
+OTHRED,Other Red Algae,mytilus,344
+OTHRED,Other Red Algae,pelvetiopsis,60
+OTHRED,Other Red Algae,phyllospadix,69
+OTHSUB,Other Substrate,balanus,345
+OTHSUB,Other Substrate,mytilus,344
+OTHSUB,Other Substrate,pelvetiopsis,60
+OTHSUB,Other Substrate,phyllospadix,69
+PELLIM,Pelvetiopsis limitata,balanus,345
+PELLIM,Pelvetiopsis limitata,mytilus,344
+PELLIM,Pelvetiopsis limitata,pelvetiopsis,60
+PHRSAB,Phragmatopoma/Sabellaria spp,balanus,345
+PHRSAB,Phragmatopoma/Sabellaria spp,mytilus,344
+PHRSAB,Phragmatopoma/Sabellaria spp,pelvetiopsis,60
+PHRSAB,Phragmatopoma/Sabellaria spp,phyllospadix,69
+PHYSPP,Phyllospadix spp,balanus,345
+PHYSPP,Phyllospadix spp,mytilus,344
+PHYSPP,Phyllospadix spp,pelvetiopsis,60
+PHYSPP,Phyllospadix spp,phyllospadix,69
+PISOCH,Pisaster ochraceus,balanus,345
+PISOCH,Pisaster ochraceus,mytilus,344
+PISOCH,Pisaster ochraceus,pelvetiopsis,60
+POLPOL,Pollicipes polymerus,balanus,345
+POLPOL,Pollicipes polymerus,mytilus,344
+POLPOL,Pollicipes polymerus,pelvetiopsis,60
+PORSPP,Porphyra spp.,balanus,345
+PORSPP,Porphyra spp.,mytilus,344
+PORSPP,Porphyra spp.,pelvetiopsis,60
+ROCK,Rock,balanus,345
+ROCK,Rock,mytilus,344
+ROCK,Rock,pelvetiopsis,60
+ROCK,Rock,phyllospadix,69
+SAND,Sand,balanus,345
+SAND,Sand,mytilus,344
+SAND,Sand,pelvetiopsis,60
+SAND,Sand,phyllospadix,69
+SARMUT,Sargassum muticum,balanus,345
+SARMUT,Sargassum muticum,mytilus,344
+SARMUT,Sargassum muticum,pelvetiopsis,60
+SARMUT,Sargassum muticum,phyllospadix,69
+SCYSPP,Scytosiphon/Melanosiphon spp,balanus,345
+SCYSPP,Scytosiphon/Melanosiphon spp,mytilus,344
+SCYSPP,Scytosiphon/Melanosiphon spp,pelvetiopsis,60
+SEMCAR,Semibalanus cariosus,balanus,345
+SEMCAR,Semibalanus cariosus,mytilus,344
+SEMCAR,Semibalanus cariosus,pelvetiopsis,60
+SEPBRA,Septifer bifurcatus; Brachidontes adamsianus,balanus,55
+SEPBRA,Septifer bifurcatus; Brachidontes adamsianus,mytilus,55
+SILCOM,Silvetia compressa,balanus,345
+SILCOM,Silvetia compressa,mytilus,344
+SILCOM,Silvetia compressa,pelvetiopsis,60
+TAR,Tar,balanus,345
+TAR,Tar,mytilus,344
+TAR,Tar,pelvetiopsis,60
+TAR,Tar,phyllospadix,69
+TETRUB,Tetraclita rubescens,balanus,345
+TETRUB,Tetraclita rubescens,mytilus,344
+TETRUB,Tetraclita rubescens,pelvetiopsis,60
+ULVENT,Ulva/Enteromorpha,balanus,345
+ULVENT,Ulva/Enteromorpha,mytilus,344
+ULVENT,Ulva/Enteromorpha,pelvetiopsis,60

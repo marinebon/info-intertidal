@@ -1,49 +1,730 @@
-sp,sp_name,cinms,mbnms,ocnms
-ANTELE,Anthopleura elegantissima/sola,9809,7531,625
-ARTCOR,Articulated Corallines,9921,7531,625
-BARNAC,Barnacles,54,524,51
-CHITON,Chitons,9778,6962,574
-CHOCAN,Chondracanthus canaliculatus,9778,6962,574
-CHTBAL,Chthamalus spp/Balanus glandula,9778,6962,574
-CLACOL,Cladophora columbiana,9778,7007,574
-CRUCOR,Crustose Corallines,9816,7486,625
-EGRMEN,Egregia menziesii,9852,7531,625
-EISARB,Eisenia arborea,1611,7404,625
-ENDMUR,Endocladia muricata,9778,7007,574
-ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,9778,6962,574
-FUCGAR,Fucus gardneri,NA,7007,574
-HALSTE,Halidrys dioica/Stephanosystis spp,9782,7486,625
-HEDSES,Hedophyllum sessile,NA,169,30
-HESCAL,Hesperophycus californicus,9778,6962,574
-LIMPET,Limpets,9778,7007,574
-LOTGIG,Lottia gigantea,9778,6962,574
-MASSPP,Mastocarpus papillatus/jardinii,9778,7007,574
-MAZAFF,Mazzaella affinis,9778,6962,574
-MAZSPP,Mazzaella spp.,466,7007,574
-MYTCAL,Mytilus californianus,9807,7531,625
-MYTTRO,Mytilus trossulus,NA,939,574
-NEOLAR,Neorhodomela larix,NA,6630,70
-NONCRU,Non-coralline Crusts,9787,7531,625
-OTHALG,Other Algae/Plants,NA,7449,625
-OTHBAR,Other Barnacle,8589,6257,574
-OTHBRO,Other Brown Algae,9795,7531,625
-OTHGRE,Other Green Algae,9827,7486,625
-OTHINV,Other Invertebrate,9784,7531,625
-OTHRED,Other Red Algae,9972,7531,625
-OTHSUB,Other Substrate,300,7398,625
-PELLIM,Pelvetiopsis limitata,NA,6962,574
-PHRSAB,Phragmatopoma/Sabellaria spp,9871,7486,625
-PHYSPP,Phyllospadix spp,10024,7486,625
-PHYUND,Phyllospadix spp understory,79,524,51
-PISOCH,Pisaster ochraceus,9778,7007,574
-POLPOL,Pollicipes polymerus,9778,6962,574
-PORSPP,Porphyra spp.,9778,7007,574
-ROCK,Rock,9894,7531,625
-SAND,Sand,9828,7531,625
-SARMUT,Sargassum muticum,9329,7486,625
-SCYSPP,Scytosiphon spp,9778,6962,574
-SEMCAR,Semibalanus cariosus,NA,6585,574
-SILCOM,Silvetia compressa,9778,6962,574
-TAR,Tar,9779,7404,625
-TETRUB,Tetraclita rubescens,9778,6962,574
-ULVENT,Ulva/Enteromorpha,9778,7007,574
+sp,sp_name,sp_target,cinms,mbnms,ocnms
+ANTELE,Anthopleura elegantissima/sola,balanus,NA,488,345
+ANTELE,Anthopleura elegantissima/sola,chthamalus_balanus,2371,1715,NA
+ANTELE,Anthopleura elegantissima/sola,endocladia,2191,974,NA
+ANTELE,Anthopleura elegantissima/sola,fucus,NA,273,NA
+ANTELE,Anthopleura elegantissima/sola,hesperophycus,985,150,NA
+ANTELE,Anthopleura elegantissima/sola,mastocarpus,NA,870,NA
+ANTELE,Anthopleura elegantissima/sola,mazzaella,NA,129,NA
+ANTELE,Anthopleura elegantissima/sola,mytilus,2575,1485,344
+ANTELE,Anthopleura elegantissima/sola,pelvetiopsis,NA,201,60
+ANTELE,Anthopleura elegantissima/sola,phyllospadix,262,571,69
+ANTELE,Anthopleura elegantissima/sola,pollicipes,129,NA,NA
+ANTELE,Anthopleura elegantissima/sola,recovery,NA,42,NA
+ANTELE,Anthopleura elegantissima/sola,red_algae,60,NA,NA
+ANTELE,Anthopleura elegantissima/sola,rock,159,NA,NA
+ANTELE,Anthopleura elegantissima/sola,silvetia,2006,1190,NA
+ANTELE,Anthopleura elegantissima/sola,tar,125,NA,NA
+ANTELE,Anthopleura elegantissima/sola,tetraclita,339,NA,NA
+ARTCOR,Articulated Corallines,balanus,NA,488,345
+ARTCOR,Articulated Corallines,chthamalus_balanus,2375,1715,NA
+ARTCOR,Articulated Corallines,endocladia,2198,974,NA
+ARTCOR,Articulated Corallines,fucus,NA,273,NA
+ARTCOR,Articulated Corallines,hesperophycus,987,150,NA
+ARTCOR,Articulated Corallines,mastocarpus,NA,870,NA
+ARTCOR,Articulated Corallines,mazzaella,NA,129,NA
+ARTCOR,Articulated Corallines,mytilus,2598,1485,344
+ARTCOR,Articulated Corallines,pelvetiopsis,NA,201,60
+ARTCOR,Articulated Corallines,phyllospadix,266,571,69
+ARTCOR,Articulated Corallines,pollicipes,128,NA,NA
+ARTCOR,Articulated Corallines,recovery,NA,42,NA
+ARTCOR,Articulated Corallines,red_algae,60,NA,NA
+ARTCOR,Articulated Corallines,rock,159,NA,NA
+ARTCOR,Articulated Corallines,silvetia,2016,1190,NA
+ARTCOR,Articulated Corallines,tar,125,NA,NA
+ARTCOR,Articulated Corallines,tetraclita,343,NA,NA
+BARNAC,Barnacles,phyllospadix,264,571,69
+CHITON,Chitons,balanus,NA,488,345
+CHITON,Chitons,chthamalus_balanus,2369,1715,NA
+CHITON,Chitons,endocladia,2190,953,NA
+CHITON,Chitons,fucus,NA,260,NA
+CHITON,Chitons,hesperophycus,985,150,NA
+CHITON,Chitons,mastocarpus,NA,870,NA
+CHITON,Chitons,mazzaella,NA,129,NA
+CHITON,Chitons,mytilus,2553,1485,344
+CHITON,Chitons,pelvetiopsis,NA,190,60
+CHITON,Chitons,pollicipes,126,NA,NA
+CHITON,Chitons,recovery,NA,42,NA
+CHITON,Chitons,red_algae,60,NA,NA
+CHITON,Chitons,rock,159,NA,NA
+CHITON,Chitons,silvetia,1999,1190,NA
+CHITON,Chitons,tar,125,NA,NA
+CHITON,Chitons,tetraclita,341,NA,NA
+CHOCAN,Chondracanthus canaliculatus,balanus,NA,488,345
+CHOCAN,Chondracanthus canaliculatus,chthamalus_balanus,2371,1715,NA
+CHOCAN,Chondracanthus canaliculatus,endocladia,2193,953,NA
+CHOCAN,Chondracanthus canaliculatus,fucus,NA,260,NA
+CHOCAN,Chondracanthus canaliculatus,hesperophycus,987,150,NA
+CHOCAN,Chondracanthus canaliculatus,mastocarpus,NA,870,NA
+CHOCAN,Chondracanthus canaliculatus,mazzaella,NA,129,NA
+CHOCAN,Chondracanthus canaliculatus,mytilus,2551,1485,344
+CHOCAN,Chondracanthus canaliculatus,pelvetiopsis,NA,190,60
+CHOCAN,Chondracanthus canaliculatus,pollicipes,125,NA,NA
+CHOCAN,Chondracanthus canaliculatus,recovery,NA,42,NA
+CHOCAN,Chondracanthus canaliculatus,red_algae,60,NA,NA
+CHOCAN,Chondracanthus canaliculatus,rock,159,NA,NA
+CHOCAN,Chondracanthus canaliculatus,silvetia,2003,1190,NA
+CHOCAN,Chondracanthus canaliculatus,tar,125,NA,NA
+CHOCAN,Chondracanthus canaliculatus,tetraclita,339,NA,NA
+CHTBAL,Chthamalus spp/Balanus glandula,balanus,NA,488,345
+CHTBAL,Chthamalus spp/Balanus glandula,chthamalus_balanus,2423,1715,NA
+CHTBAL,Chthamalus spp/Balanus glandula,endocladia,2226,953,NA
+CHTBAL,Chthamalus spp/Balanus glandula,fucus,NA,260,NA
+CHTBAL,Chthamalus spp/Balanus glandula,hesperophycus,1008,150,NA
+CHTBAL,Chthamalus spp/Balanus glandula,mastocarpus,NA,870,NA
+CHTBAL,Chthamalus spp/Balanus glandula,mazzaella,NA,129,NA
+CHTBAL,Chthamalus spp/Balanus glandula,mytilus,2551,1485,344
+CHTBAL,Chthamalus spp/Balanus glandula,pelvetiopsis,NA,190,60
+CHTBAL,Chthamalus spp/Balanus glandula,pollicipes,127,NA,NA
+CHTBAL,Chthamalus spp/Balanus glandula,recovery,NA,42,NA
+CHTBAL,Chthamalus spp/Balanus glandula,red_algae,60,NA,NA
+CHTBAL,Chthamalus spp/Balanus glandula,rock,159,NA,NA
+CHTBAL,Chthamalus spp/Balanus glandula,silvetia,2030,1190,NA
+CHTBAL,Chthamalus spp/Balanus glandula,tar,130,NA,NA
+CHTBAL,Chthamalus spp/Balanus glandula,tetraclita,341,NA,NA
+CLACOL,Cladophora columbiana,balanus,NA,488,345
+CLACOL,Cladophora columbiana,chthamalus_balanus,2369,1715,NA
+CLACOL,Cladophora columbiana,endocladia,2189,974,NA
+CLACOL,Cladophora columbiana,fucus,NA,273,NA
+CLACOL,Cladophora columbiana,hesperophycus,986,150,NA
+CLACOL,Cladophora columbiana,mastocarpus,NA,870,NA
+CLACOL,Cladophora columbiana,mazzaella,NA,129,NA
+CLACOL,Cladophora columbiana,mytilus,2544,1485,344
+CLACOL,Cladophora columbiana,pelvetiopsis,NA,201,60
+CLACOL,Cladophora columbiana,pollicipes,125,NA,NA
+CLACOL,Cladophora columbiana,recovery,NA,42,NA
+CLACOL,Cladophora columbiana,red_algae,60,NA,NA
+CLACOL,Cladophora columbiana,rock,159,NA,NA
+CLACOL,Cladophora columbiana,silvetia,2001,1190,NA
+CLACOL,Cladophora columbiana,tar,125,NA,NA
+CLACOL,Cladophora columbiana,tetraclita,339,NA,NA
+CRUCOR,Crustose Corallines,balanus,NA,488,345
+CRUCOR,Crustose Corallines,chthamalus_balanus,2378,1715,NA
+CRUCOR,Crustose Corallines,endocladia,2215,953,NA
+CRUCOR,Crustose Corallines,fucus,NA,260,NA
+CRUCOR,Crustose Corallines,hesperophycus,995,150,NA
+CRUCOR,Crustose Corallines,mastocarpus,NA,870,NA
+CRUCOR,Crustose Corallines,mazzaella,NA,129,NA
+CRUCOR,Crustose Corallines,mytilus,2592,1485,344
+CRUCOR,Crustose Corallines,pelvetiopsis,NA,190,60
+CRUCOR,Crustose Corallines,phyllospadix,266,571,69
+CRUCOR,Crustose Corallines,pollicipes,130,NA,NA
+CRUCOR,Crustose Corallines,recovery,NA,42,NA
+CRUCOR,Crustose Corallines,red_algae,60,NA,NA
+CRUCOR,Crustose Corallines,rock,159,NA,NA
+CRUCOR,Crustose Corallines,silvetia,2029,1190,NA
+CRUCOR,Crustose Corallines,tar,125,NA,NA
+CRUCOR,Crustose Corallines,tetraclita,343,NA,NA
+EGRMEN,Egregia menziesii,balanus,NA,488,345
+EGRMEN,Egregia menziesii,chthamalus_balanus,2369,1715,NA
+EGRMEN,Egregia menziesii,endocladia,2189,974,NA
+EGRMEN,Egregia menziesii,fucus,NA,273,NA
+EGRMEN,Egregia menziesii,hesperophycus,984,150,NA
+EGRMEN,Egregia menziesii,mastocarpus,NA,870,NA
+EGRMEN,Egregia menziesii,mazzaella,NA,129,NA
+EGRMEN,Egregia menziesii,mytilus,2543,1485,344
+EGRMEN,Egregia menziesii,pelvetiopsis,NA,201,60
+EGRMEN,Egregia menziesii,phyllospadix,262,571,69
+EGRMEN,Egregia menziesii,pollicipes,125,NA,NA
+EGRMEN,Egregia menziesii,recovery,NA,42,NA
+EGRMEN,Egregia menziesii,red_algae,60,NA,NA
+EGRMEN,Egregia menziesii,rock,159,NA,NA
+EGRMEN,Egregia menziesii,silvetia,1998,1190,NA
+EGRMEN,Egregia menziesii,tar,125,NA,NA
+EGRMEN,Egregia menziesii,tetraclita,339,NA,NA
+EISARB,Eisenia arborea,balanus,NA,488,345
+EISARB,Eisenia arborea,chthamalus_balanus,583,1715,NA
+EISARB,Eisenia arborea,endocladia,536,953,NA
+EISARB,Eisenia arborea,fucus,NA,260,NA
+EISARB,Eisenia arborea,hesperophycus,240,150,NA
+EISARB,Eisenia arborea,mastocarpus,NA,870,NA
+EISARB,Eisenia arborea,mazzaella,NA,129,NA
+EISARB,Eisenia arborea,mytilus,635,1485,344
+EISARB,Eisenia arborea,pelvetiopsis,NA,190,60
+EISARB,Eisenia arborea,phyllospadix,1,489,69
+EISARB,Eisenia arborea,pollicipes,30,NA,NA
+EISARB,Eisenia arborea,recovery,NA,42,NA
+EISARB,Eisenia arborea,red_algae,5,NA,NA
+EISARB,Eisenia arborea,rock,94,NA,NA
+EISARB,Eisenia arborea,silvetia,485,1190,NA
+EISARB,Eisenia arborea,tar,30,NA,NA
+EISARB,Eisenia arborea,tetraclita,85,NA,NA
+ENDMUR,Endocladia muricata,balanus,NA,488,345
+ENDMUR,Endocladia muricata,chthamalus_balanus,2386,1715,NA
+ENDMUR,Endocladia muricata,endocladia,2246,974,NA
+ENDMUR,Endocladia muricata,fucus,NA,273,NA
+ENDMUR,Endocladia muricata,hesperophycus,1011,150,NA
+ENDMUR,Endocladia muricata,mastocarpus,NA,870,NA
+ENDMUR,Endocladia muricata,mazzaella,NA,129,NA
+ENDMUR,Endocladia muricata,mytilus,2545,1485,344
+ENDMUR,Endocladia muricata,pelvetiopsis,NA,201,60
+ENDMUR,Endocladia muricata,pollicipes,126,NA,NA
+ENDMUR,Endocladia muricata,recovery,NA,42,NA
+ENDMUR,Endocladia muricata,red_algae,60,NA,NA
+ENDMUR,Endocladia muricata,rock,159,NA,NA
+ENDMUR,Endocladia muricata,silvetia,2035,1190,NA
+ENDMUR,Endocladia muricata,tar,126,NA,NA
+ENDMUR,Endocladia muricata,tetraclita,340,NA,NA
+ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,balanus,NA,488,345
+ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,chthamalus_balanus,2374,1715,NA
+ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,endocladia,2190,953,NA
+ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,fucus,NA,260,NA
+ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,hesperophycus,985,150,NA
+ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,mastocarpus,NA,870,NA
+ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,mazzaella,NA,129,NA
+ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,mytilus,2543,1485,344
+ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,pelvetiopsis,NA,190,60
+ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,pollicipes,125,NA,NA
+ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,recovery,NA,42,NA
+ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,red_algae,60,NA,NA
+ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,rock,159,NA,NA
+ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,silvetia,2000,1190,NA
+ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,tar,125,NA,NA
+ENPEPH,Endarachne/Petalonia/Phaeostrophion spp,tetraclita,339,NA,NA
+FUCGAR,Fucus gardneri,balanus,NA,488,345
+FUCGAR,Fucus gardneri,chthamalus_balanus,NA,1715,NA
+FUCGAR,Fucus gardneri,endocladia,NA,974,NA
+FUCGAR,Fucus gardneri,fucus,NA,273,NA
+FUCGAR,Fucus gardneri,hesperophycus,NA,150,NA
+FUCGAR,Fucus gardneri,mastocarpus,NA,870,NA
+FUCGAR,Fucus gardneri,mazzaella,NA,129,NA
+FUCGAR,Fucus gardneri,mytilus,NA,1485,344
+FUCGAR,Fucus gardneri,pelvetiopsis,NA,201,60
+FUCGAR,Fucus gardneri,recovery,NA,42,NA
+FUCGAR,Fucus gardneri,silvetia,NA,1190,NA
+HALSTE,Halidrys dioica/Stephanosystis spp,balanus,NA,488,345
+HALSTE,Halidrys dioica/Stephanosystis spp,chthamalus_balanus,2369,1715,NA
+HALSTE,Halidrys dioica/Stephanosystis spp,endocladia,2189,953,NA
+HALSTE,Halidrys dioica/Stephanosystis spp,fucus,NA,260,NA
+HALSTE,Halidrys dioica/Stephanosystis spp,hesperophycus,984,150,NA
+HALSTE,Halidrys dioica/Stephanosystis spp,mastocarpus,NA,870,NA
+HALSTE,Halidrys dioica/Stephanosystis spp,mazzaella,NA,129,NA
+HALSTE,Halidrys dioica/Stephanosystis spp,mytilus,2543,1485,344
+HALSTE,Halidrys dioica/Stephanosystis spp,pelvetiopsis,NA,190,60
+HALSTE,Halidrys dioica/Stephanosystis spp,phyllospadix,261,571,69
+HALSTE,Halidrys dioica/Stephanosystis spp,pollicipes,125,NA,NA
+HALSTE,Halidrys dioica/Stephanosystis spp,recovery,NA,42,NA
+HALSTE,Halidrys dioica/Stephanosystis spp,red_algae,60,NA,NA
+HALSTE,Halidrys dioica/Stephanosystis spp,rock,159,NA,NA
+HALSTE,Halidrys dioica/Stephanosystis spp,silvetia,1998,1190,NA
+HALSTE,Halidrys dioica/Stephanosystis spp,tar,125,NA,NA
+HALSTE,Halidrys dioica/Stephanosystis spp,tetraclita,339,NA,NA
+HEDSES,Hedophyllum sessile,phyllospadix,NA,210,30
+HESCAL,Hesperophycus californicus,balanus,NA,488,345
+HESCAL,Hesperophycus californicus,chthamalus_balanus,2370,1715,NA
+HESCAL,Hesperophycus californicus,endocladia,2189,953,NA
+HESCAL,Hesperophycus californicus,fucus,NA,260,NA
+HESCAL,Hesperophycus californicus,hesperophycus,1001,150,NA
+HESCAL,Hesperophycus californicus,mastocarpus,NA,870,NA
+HESCAL,Hesperophycus californicus,mazzaella,NA,129,NA
+HESCAL,Hesperophycus californicus,mytilus,2543,1485,344
+HESCAL,Hesperophycus californicus,pelvetiopsis,NA,190,60
+HESCAL,Hesperophycus californicus,pollicipes,125,NA,NA
+HESCAL,Hesperophycus californicus,recovery,NA,42,NA
+HESCAL,Hesperophycus californicus,red_algae,60,NA,NA
+HESCAL,Hesperophycus californicus,rock,159,NA,NA
+HESCAL,Hesperophycus californicus,silvetia,2001,1190,NA
+HESCAL,Hesperophycus californicus,tar,125,NA,NA
+HESCAL,Hesperophycus californicus,tetraclita,339,NA,NA
+LIMPET,Limpets,balanus,NA,488,345
+LIMPET,Limpets,chthamalus_balanus,2400,1715,NA
+LIMPET,Limpets,endocladia,2216,974,NA
+LIMPET,Limpets,fucus,NA,273,NA
+LIMPET,Limpets,hesperophycus,990,150,NA
+LIMPET,Limpets,mastocarpus,NA,870,NA
+LIMPET,Limpets,mazzaella,NA,129,NA
+LIMPET,Limpets,mytilus,2554,1485,344
+LIMPET,Limpets,pelvetiopsis,NA,201,60
+LIMPET,Limpets,pollicipes,126,NA,NA
+LIMPET,Limpets,recovery,NA,42,NA
+LIMPET,Limpets,red_algae,60,NA,NA
+LIMPET,Limpets,rock,159,NA,NA
+LIMPET,Limpets,silvetia,2018,1190,NA
+LIMPET,Limpets,tar,125,NA,NA
+LIMPET,Limpets,tetraclita,342,NA,NA
+LOTGIG,Lottia gigantea,balanus,NA,488,345
+LOTGIG,Lottia gigantea,chthamalus_balanus,2369,1715,NA
+LOTGIG,Lottia gigantea,endocladia,2191,953,NA
+LOTGIG,Lottia gigantea,fucus,NA,260,NA
+LOTGIG,Lottia gigantea,hesperophycus,984,150,NA
+LOTGIG,Lottia gigantea,mastocarpus,NA,870,NA
+LOTGIG,Lottia gigantea,mazzaella,NA,129,NA
+LOTGIG,Lottia gigantea,mytilus,2558,1485,344
+LOTGIG,Lottia gigantea,pelvetiopsis,NA,190,60
+LOTGIG,Lottia gigantea,pollicipes,125,NA,NA
+LOTGIG,Lottia gigantea,recovery,NA,42,NA
+LOTGIG,Lottia gigantea,red_algae,60,NA,NA
+LOTGIG,Lottia gigantea,rock,159,NA,NA
+LOTGIG,Lottia gigantea,silvetia,1998,1190,NA
+LOTGIG,Lottia gigantea,tar,125,NA,NA
+LOTGIG,Lottia gigantea,tetraclita,342,NA,NA
+MASSPP,Mastocarpus papillatus/jardinii,balanus,NA,488,345
+MASSPP,Mastocarpus papillatus/jardinii,chthamalus_balanus,2369,1715,NA
+MASSPP,Mastocarpus papillatus/jardinii,endocladia,2190,974,NA
+MASSPP,Mastocarpus papillatus/jardinii,fucus,NA,273,NA
+MASSPP,Mastocarpus papillatus/jardinii,hesperophycus,984,150,NA
+MASSPP,Mastocarpus papillatus/jardinii,mastocarpus,NA,870,NA
+MASSPP,Mastocarpus papillatus/jardinii,mazzaella,NA,129,NA
+MASSPP,Mastocarpus papillatus/jardinii,mytilus,2543,1485,344
+MASSPP,Mastocarpus papillatus/jardinii,pelvetiopsis,NA,201,60
+MASSPP,Mastocarpus papillatus/jardinii,pollicipes,125,NA,NA
+MASSPP,Mastocarpus papillatus/jardinii,recovery,NA,42,NA
+MASSPP,Mastocarpus papillatus/jardinii,red_algae,60,NA,NA
+MASSPP,Mastocarpus papillatus/jardinii,rock,159,NA,NA
+MASSPP,Mastocarpus papillatus/jardinii,silvetia,1998,1190,NA
+MASSPP,Mastocarpus papillatus/jardinii,tar,125,NA,NA
+MASSPP,Mastocarpus papillatus/jardinii,tetraclita,339,NA,NA
+MAZAFF,Mazzaella affinis,balanus,NA,488,345
+MAZAFF,Mazzaella affinis,chthamalus_balanus,2374,1715,NA
+MAZAFF,Mazzaella affinis,endocladia,2212,953,NA
+MAZAFF,Mazzaella affinis,fucus,NA,260,NA
+MAZAFF,Mazzaella affinis,hesperophycus,997,150,NA
+MAZAFF,Mazzaella affinis,mastocarpus,NA,870,NA
+MAZAFF,Mazzaella affinis,mazzaella,NA,129,NA
+MAZAFF,Mazzaella affinis,mytilus,2560,1485,344
+MAZAFF,Mazzaella affinis,pelvetiopsis,NA,190,60
+MAZAFF,Mazzaella affinis,pollicipes,125,NA,NA
+MAZAFF,Mazzaella affinis,recovery,NA,42,NA
+MAZAFF,Mazzaella affinis,red_algae,60,NA,NA
+MAZAFF,Mazzaella affinis,rock,159,NA,NA
+MAZAFF,Mazzaella affinis,silvetia,2027,1190,NA
+MAZAFF,Mazzaella affinis,tar,125,NA,NA
+MAZAFF,Mazzaella affinis,tetraclita,339,NA,NA
+MAZSPP,Mazzaella spp.,balanus,NA,488,345
+MAZSPP,Mazzaella spp.,chthamalus_balanus,102,1715,NA
+MAZSPP,Mazzaella spp.,endocladia,95,974,NA
+MAZSPP,Mazzaella spp.,fucus,NA,273,NA
+MAZSPP,Mazzaella spp.,hesperophycus,40,150,NA
+MAZSPP,Mazzaella spp.,mastocarpus,NA,870,NA
+MAZSPP,Mazzaella spp.,mazzaella,NA,129,NA
+MAZSPP,Mazzaella spp.,mytilus,112,1485,344
+MAZSPP,Mazzaella spp.,pelvetiopsis,NA,201,60
+MAZSPP,Mazzaella spp.,pollicipes,5,NA,NA
+MAZSPP,Mazzaella spp.,recovery,NA,42,NA
+MAZSPP,Mazzaella spp.,red_algae,5,NA,NA
+MAZSPP,Mazzaella spp.,silvetia,87,1190,NA
+MAZSPP,Mazzaella spp.,tar,5,NA,NA
+MAZSPP,Mazzaella spp.,tetraclita,15,NA,NA
+MYTCAL,Mytilus californianus,balanus,NA,488,345
+MYTCAL,Mytilus californianus,chthamalus_balanus,2378,1715,NA
+MYTCAL,Mytilus californianus,endocladia,2218,974,NA
+MYTCAL,Mytilus californianus,fucus,NA,273,NA
+MYTCAL,Mytilus californianus,hesperophycus,985,150,NA
+MYTCAL,Mytilus californianus,mastocarpus,NA,870,NA
+MYTCAL,Mytilus californianus,mazzaella,NA,129,NA
+MYTCAL,Mytilus californianus,mytilus,2610,1485,344
+MYTCAL,Mytilus californianus,pelvetiopsis,NA,201,60
+MYTCAL,Mytilus californianus,phyllospadix,264,571,69
+MYTCAL,Mytilus californianus,pollicipes,130,NA,NA
+MYTCAL,Mytilus californianus,recovery,NA,42,NA
+MYTCAL,Mytilus californianus,red_algae,60,NA,NA
+MYTCAL,Mytilus californianus,rock,159,NA,NA
+MYTCAL,Mytilus californianus,silvetia,2015,1190,NA
+MYTCAL,Mytilus californianus,tar,125,NA,NA
+MYTCAL,Mytilus californianus,tetraclita,343,NA,NA
+MYTTRO,Mytilus trossulus,balanus,NA,88,345
+MYTTRO,Mytilus trossulus,chthamalus_balanus,41,249,NA
+MYTTRO,Mytilus trossulus,endocladia,29,176,NA
+MYTTRO,Mytilus trossulus,fucus,NA,60,NA
+MYTTRO,Mytilus trossulus,hesperophycus,11,40,NA
+MYTTRO,Mytilus trossulus,mastocarpus,NA,185,NA
+MYTTRO,Mytilus trossulus,mazzaella,NA,20,NA
+MYTTRO,Mytilus trossulus,mytilus,40,280,344
+MYTTRO,Mytilus trossulus,pelvetiopsis,NA,30,60
+MYTTRO,Mytilus trossulus,recovery,NA,6,NA
+MYTTRO,Mytilus trossulus,silvetia,35,245,NA
+MYTTRO,Mytilus trossulus,tetraclita,10,NA,NA
+NEOLAR,Neorhodomela larix,balanus,NA,488,285
+NEOLAR,Neorhodomela larix,chthamalus_balanus,NA,1598,NA
+NEOLAR,Neorhodomela larix,endocladia,NA,859,NA
+NEOLAR,Neorhodomela larix,fucus,NA,273,NA
+NEOLAR,Neorhodomela larix,hesperophycus,NA,150,NA
+NEOLAR,Neorhodomela larix,mastocarpus,NA,870,NA
+NEOLAR,Neorhodomela larix,mazzaella,NA,129,NA
+NEOLAR,Neorhodomela larix,mytilus,NA,1365,285
+NEOLAR,Neorhodomela larix,pelvetiopsis,NA,141,60
+NEOLAR,Neorhodomela larix,recovery,NA,42,NA
+NEOLAR,Neorhodomela larix,silvetia,NA,1190,NA
+NONCRU,Non-coralline Crusts,balanus,NA,488,345
+NONCRU,Non-coralline Crusts,chthamalus_balanus,2386,1715,NA
+NONCRU,Non-coralline Crusts,endocladia,2221,974,NA
+NONCRU,Non-coralline Crusts,fucus,NA,273,NA
+NONCRU,Non-coralline Crusts,hesperophycus,1002,150,NA
+NONCRU,Non-coralline Crusts,mastocarpus,NA,870,NA
+NONCRU,Non-coralline Crusts,mazzaella,NA,129,NA
+NONCRU,Non-coralline Crusts,mytilus,2561,1485,344
+NONCRU,Non-coralline Crusts,pelvetiopsis,NA,201,60
+NONCRU,Non-coralline Crusts,phyllospadix,262,571,69
+NONCRU,Non-coralline Crusts,pollicipes,125,NA,NA
+NONCRU,Non-coralline Crusts,recovery,NA,42,NA
+NONCRU,Non-coralline Crusts,red_algae,60,NA,NA
+NONCRU,Non-coralline Crusts,rock,159,NA,NA
+NONCRU,Non-coralline Crusts,silvetia,2037,1190,NA
+NONCRU,Non-coralline Crusts,tar,125,NA,NA
+NONCRU,Non-coralline Crusts,tetraclita,344,NA,NA
+OTHALG,Other Algae/Plants,balanus,NA,488,345
+OTHALG,Other Algae/Plants,chthamalus_balanus,NA,1705,NA
+OTHALG,Other Algae/Plants,endocladia,NA,962,NA
+OTHALG,Other Algae/Plants,fucus,NA,273,NA
+OTHALG,Other Algae/Plants,hesperophycus,NA,150,NA
+OTHALG,Other Algae/Plants,mastocarpus,NA,870,NA
+OTHALG,Other Algae/Plants,mazzaella,NA,129,NA
+OTHALG,Other Algae/Plants,mytilus,NA,1475,344
+OTHALG,Other Algae/Plants,pelvetiopsis,NA,196,60
+OTHALG,Other Algae/Plants,phyllospadix,NA,458,57
+OTHALG,Other Algae/Plants,recovery,NA,42,NA
+OTHALG,Other Algae/Plants,silvetia,NA,1190,NA
+OTHBAR,Other Barnacle,balanus,NA,388,345
+OTHBAR,Other Barnacle,chthamalus_balanus,1874,1415,NA
+OTHBAR,Other Barnacle,endocladia,1736,919,NA
+OTHBAR,Other Barnacle,fucus,NA,245,NA
+OTHBAR,Other Barnacle,hesperophycus,775,150,NA
+OTHBAR,Other Barnacle,mastocarpus,NA,840,NA
+OTHBAR,Other Barnacle,mazzaella,NA,129,NA
+OTHBAR,Other Barnacle,mytilus,2005,1375,344
+OTHBAR,Other Barnacle,pelvetiopsis,NA,185,60
+OTHBAR,Other Barnacle,pollicipes,100,NA,NA
+OTHBAR,Other Barnacle,recovery,NA,36,NA
+OTHBAR,Other Barnacle,red_algae,60,NA,NA
+OTHBAR,Other Barnacle,rock,90,NA,NA
+OTHBAR,Other Barnacle,silvetia,1590,1085,NA
+OTHBAR,Other Barnacle,tar,100,NA,NA
+OTHBAR,Other Barnacle,tetraclita,259,NA,NA
+OTHBRO,Other Brown Algae,balanus,NA,488,345
+OTHBRO,Other Brown Algae,chthamalus_balanus,2369,1715,NA
+OTHBRO,Other Brown Algae,endocladia,2189,974,NA
+OTHBRO,Other Brown Algae,fucus,NA,273,NA
+OTHBRO,Other Brown Algae,hesperophycus,984,150,NA
+OTHBRO,Other Brown Algae,mastocarpus,NA,870,NA
+OTHBRO,Other Brown Algae,mazzaella,NA,129,NA
+OTHBRO,Other Brown Algae,mytilus,2542,1485,344
+OTHBRO,Other Brown Algae,pelvetiopsis,NA,201,60
+OTHBRO,Other Brown Algae,phyllospadix,262,571,69
+OTHBRO,Other Brown Algae,pollicipes,125,NA,NA
+OTHBRO,Other Brown Algae,recovery,NA,42,NA
+OTHBRO,Other Brown Algae,red_algae,60,NA,NA
+OTHBRO,Other Brown Algae,rock,159,NA,NA
+OTHBRO,Other Brown Algae,silvetia,1998,1190,NA
+OTHBRO,Other Brown Algae,tar,125,NA,NA
+OTHBRO,Other Brown Algae,tetraclita,339,NA,NA
+OTHGRE,Other Green Algae,balanus,NA,488,345
+OTHGRE,Other Green Algae,chthamalus_balanus,2369,1715,NA
+OTHGRE,Other Green Algae,endocladia,2189,953,NA
+OTHGRE,Other Green Algae,fucus,NA,260,NA
+OTHGRE,Other Green Algae,hesperophycus,984,150,NA
+OTHGRE,Other Green Algae,mastocarpus,NA,870,NA
+OTHGRE,Other Green Algae,mazzaella,NA,129,NA
+OTHGRE,Other Green Algae,mytilus,2543,1485,344
+OTHGRE,Other Green Algae,pelvetiopsis,NA,190,60
+OTHGRE,Other Green Algae,phyllospadix,263,571,69
+OTHGRE,Other Green Algae,pollicipes,125,NA,NA
+OTHGRE,Other Green Algae,recovery,NA,42,NA
+OTHGRE,Other Green Algae,red_algae,60,NA,NA
+OTHGRE,Other Green Algae,rock,159,NA,NA
+OTHGRE,Other Green Algae,silvetia,1998,1190,NA
+OTHGRE,Other Green Algae,tar,125,NA,NA
+OTHGRE,Other Green Algae,tetraclita,339,NA,NA
+OTHINV,Other Invertebrate,balanus,NA,488,345
+OTHINV,Other Invertebrate,chthamalus_balanus,2369,1715,NA
+OTHINV,Other Invertebrate,endocladia,2190,974,NA
+OTHINV,Other Invertebrate,fucus,NA,273,NA
+OTHINV,Other Invertebrate,hesperophycus,984,150,NA
+OTHINV,Other Invertebrate,mastocarpus,NA,870,NA
+OTHINV,Other Invertebrate,mazzaella,NA,129,NA
+OTHINV,Other Invertebrate,mytilus,2543,1485,344
+OTHINV,Other Invertebrate,pelvetiopsis,NA,201,60
+OTHINV,Other Invertebrate,phyllospadix,261,571,69
+OTHINV,Other Invertebrate,pollicipes,125,NA,NA
+OTHINV,Other Invertebrate,recovery,NA,42,NA
+OTHINV,Other Invertebrate,red_algae,60,NA,NA
+OTHINV,Other Invertebrate,rock,159,NA,NA
+OTHINV,Other Invertebrate,silvetia,1998,1190,NA
+OTHINV,Other Invertebrate,tar,125,NA,NA
+OTHINV,Other Invertebrate,tetraclita,339,NA,NA
+OTHRED,Other Red Algae,balanus,NA,488,345
+OTHRED,Other Red Algae,chthamalus_balanus,2375,1715,NA
+OTHRED,Other Red Algae,endocladia,2196,974,NA
+OTHRED,Other Red Algae,fucus,NA,273,NA
+OTHRED,Other Red Algae,hesperophycus,989,150,NA
+OTHRED,Other Red Algae,mastocarpus,NA,870,NA
+OTHRED,Other Red Algae,mazzaella,NA,129,NA
+OTHRED,Other Red Algae,mytilus,2549,1485,344
+OTHRED,Other Red Algae,pelvetiopsis,NA,201,60
+OTHRED,Other Red Algae,phyllospadix,269,571,69
+OTHRED,Other Red Algae,pollicipes,125,NA,NA
+OTHRED,Other Red Algae,recovery,NA,42,NA
+OTHRED,Other Red Algae,red_algae,60,NA,NA
+OTHRED,Other Red Algae,rock,159,NA,NA
+OTHRED,Other Red Algae,silvetia,2008,1190,NA
+OTHRED,Other Red Algae,tar,125,NA,NA
+OTHRED,Other Red Algae,tetraclita,340,NA,NA
+OTHSUB,Other Substrate,balanus,NA,488,345
+OTHSUB,Other Substrate,chthamalus_balanus,335,1715,NA
+OTHSUB,Other Substrate,endocladia,294,953,NA
+OTHSUB,Other Substrate,fucus,NA,260,NA
+OTHSUB,Other Substrate,hesperophycus,137,150,NA
+OTHSUB,Other Substrate,mastocarpus,NA,870,NA
+OTHSUB,Other Substrate,mazzaella,NA,129,NA
+OTHSUB,Other Substrate,mytilus,341,1485,344
+OTHSUB,Other Substrate,pelvetiopsis,NA,190,60
+OTHSUB,Other Substrate,phyllospadix,NA,483,69
+OTHSUB,Other Substrate,pollicipes,15,NA,NA
+OTHSUB,Other Substrate,recovery,NA,42,NA
+OTHSUB,Other Substrate,rock,39,NA,NA
+OTHSUB,Other Substrate,silvetia,267,1190,NA
+OTHSUB,Other Substrate,tar,15,NA,NA
+OTHSUB,Other Substrate,tetraclita,51,NA,NA
+PELLIM,Pelvetiopsis limitata,balanus,NA,488,345
+PELLIM,Pelvetiopsis limitata,chthamalus_balanus,130,1715,NA
+PELLIM,Pelvetiopsis limitata,endocladia,130,953,NA
+PELLIM,Pelvetiopsis limitata,fucus,NA,260,NA
+PELLIM,Pelvetiopsis limitata,hesperophycus,130,150,NA
+PELLIM,Pelvetiopsis limitata,mastocarpus,NA,870,NA
+PELLIM,Pelvetiopsis limitata,mazzaella,NA,129,NA
+PELLIM,Pelvetiopsis limitata,mytilus,128,1485,344
+PELLIM,Pelvetiopsis limitata,pelvetiopsis,NA,190,60
+PELLIM,Pelvetiopsis limitata,recovery,NA,42,NA
+PELLIM,Pelvetiopsis limitata,silvetia,1,1190,NA
+PELLIM,Pelvetiopsis limitata,tetraclita,130,NA,NA
+PHRSAB,Phragmatopoma/Sabellaria spp,balanus,NA,488,345
+PHRSAB,Phragmatopoma/Sabellaria spp,chthamalus_balanus,2374,1715,NA
+PHRSAB,Phragmatopoma/Sabellaria spp,endocladia,2192,953,NA
+PHRSAB,Phragmatopoma/Sabellaria spp,fucus,NA,260,NA
+PHRSAB,Phragmatopoma/Sabellaria spp,hesperophycus,986,150,NA
+PHRSAB,Phragmatopoma/Sabellaria spp,mastocarpus,NA,870,NA
+PHRSAB,Phragmatopoma/Sabellaria spp,mazzaella,NA,129,NA
+PHRSAB,Phragmatopoma/Sabellaria spp,mytilus,2585,1485,344
+PHRSAB,Phragmatopoma/Sabellaria spp,pelvetiopsis,NA,190,60
+PHRSAB,Phragmatopoma/Sabellaria spp,phyllospadix,266,571,69
+PHRSAB,Phragmatopoma/Sabellaria spp,pollicipes,129,NA,NA
+PHRSAB,Phragmatopoma/Sabellaria spp,recovery,NA,42,NA
+PHRSAB,Phragmatopoma/Sabellaria spp,red_algae,60,NA,NA
+PHRSAB,Phragmatopoma/Sabellaria spp,rock,159,NA,NA
+PHRSAB,Phragmatopoma/Sabellaria spp,silvetia,2009,1190,NA
+PHRSAB,Phragmatopoma/Sabellaria spp,tar,125,NA,NA
+PHRSAB,Phragmatopoma/Sabellaria spp,tetraclita,339,NA,NA
+PHYSPP,Phyllospadix spp,balanus,NA,488,345
+PHYSPP,Phyllospadix spp,chthamalus_balanus,2369,1715,NA
+PHYSPP,Phyllospadix spp,endocladia,2189,953,NA
+PHYSPP,Phyllospadix spp,fucus,NA,260,NA
+PHYSPP,Phyllospadix spp,hesperophycus,984,150,NA
+PHYSPP,Phyllospadix spp,mastocarpus,NA,870,NA
+PHYSPP,Phyllospadix spp,mazzaella,NA,129,NA
+PHYSPP,Phyllospadix spp,mytilus,2543,1485,344
+PHYSPP,Phyllospadix spp,pelvetiopsis,NA,190,60
+PHYSPP,Phyllospadix spp,phyllospadix,273,571,69
+PHYSPP,Phyllospadix spp,pollicipes,125,NA,NA
+PHYSPP,Phyllospadix spp,recovery,NA,42,NA
+PHYSPP,Phyllospadix spp,red_algae,60,NA,NA
+PHYSPP,Phyllospadix spp,rock,159,NA,NA
+PHYSPP,Phyllospadix spp,silvetia,1999,1190,NA
+PHYSPP,Phyllospadix spp,tar,125,NA,NA
+PHYSPP,Phyllospadix spp,tetraclita,339,NA,NA
+PISOCH,Pisaster ochraceus,balanus,NA,488,345
+PISOCH,Pisaster ochraceus,chthamalus_balanus,2369,1715,NA
+PISOCH,Pisaster ochraceus,endocladia,2189,974,NA
+PISOCH,Pisaster ochraceus,fucus,NA,273,NA
+PISOCH,Pisaster ochraceus,hesperophycus,984,150,NA
+PISOCH,Pisaster ochraceus,mastocarpus,NA,870,NA
+PISOCH,Pisaster ochraceus,mazzaella,NA,129,NA
+PISOCH,Pisaster ochraceus,mytilus,2543,1485,344
+PISOCH,Pisaster ochraceus,pelvetiopsis,NA,201,60
+PISOCH,Pisaster ochraceus,pollicipes,125,NA,NA
+PISOCH,Pisaster ochraceus,recovery,NA,42,NA
+PISOCH,Pisaster ochraceus,red_algae,60,NA,NA
+PISOCH,Pisaster ochraceus,rock,159,NA,NA
+PISOCH,Pisaster ochraceus,silvetia,1998,1190,NA
+PISOCH,Pisaster ochraceus,tar,125,NA,NA
+PISOCH,Pisaster ochraceus,tetraclita,339,NA,NA
+POLPOL,Pollicipes polymerus,balanus,NA,488,345
+POLPOL,Pollicipes polymerus,chthamalus_balanus,2369,1715,NA
+POLPOL,Pollicipes polymerus,endocladia,2201,953,NA
+POLPOL,Pollicipes polymerus,fucus,NA,260,NA
+POLPOL,Pollicipes polymerus,hesperophycus,984,150,NA
+POLPOL,Pollicipes polymerus,mastocarpus,NA,870,NA
+POLPOL,Pollicipes polymerus,mazzaella,NA,129,NA
+POLPOL,Pollicipes polymerus,mytilus,2581,1485,344
+POLPOL,Pollicipes polymerus,pelvetiopsis,NA,190,60
+POLPOL,Pollicipes polymerus,pollicipes,130,NA,NA
+POLPOL,Pollicipes polymerus,recovery,NA,42,NA
+POLPOL,Pollicipes polymerus,red_algae,60,NA,NA
+POLPOL,Pollicipes polymerus,rock,159,NA,NA
+POLPOL,Pollicipes polymerus,silvetia,2005,1190,NA
+POLPOL,Pollicipes polymerus,tar,125,NA,NA
+POLPOL,Pollicipes polymerus,tetraclita,340,NA,NA
+PORSPP,Porphyra spp.,balanus,NA,488,345
+PORSPP,Porphyra spp.,chthamalus_balanus,2372,1715,NA
+PORSPP,Porphyra spp.,endocladia,2193,974,NA
+PORSPP,Porphyra spp.,fucus,NA,273,NA
+PORSPP,Porphyra spp.,hesperophycus,984,150,NA
+PORSPP,Porphyra spp.,mastocarpus,NA,870,NA
+PORSPP,Porphyra spp.,mazzaella,NA,129,NA
+PORSPP,Porphyra spp.,mytilus,2543,1485,344
+PORSPP,Porphyra spp.,pelvetiopsis,NA,201,60
+PORSPP,Porphyra spp.,pollicipes,125,NA,NA
+PORSPP,Porphyra spp.,recovery,NA,42,NA
+PORSPP,Porphyra spp.,red_algae,60,NA,NA
+PORSPP,Porphyra spp.,rock,159,NA,NA
+PORSPP,Porphyra spp.,silvetia,2002,1190,NA
+PORSPP,Porphyra spp.,tar,127,NA,NA
+PORSPP,Porphyra spp.,tetraclita,339,NA,NA
+ROCK,Rock,balanus,NA,488,345
+ROCK,Rock,chthamalus_balanus,2427,1715,NA
+ROCK,Rock,endocladia,2249,974,NA
+ROCK,Rock,fucus,NA,273,NA
+ROCK,Rock,hesperophycus,1014,150,NA
+ROCK,Rock,mastocarpus,NA,870,NA
+ROCK,Rock,mazzaella,NA,129,NA
+ROCK,Rock,mytilus,2607,1485,344
+ROCK,Rock,pelvetiopsis,NA,201,60
+ROCK,Rock,phyllospadix,266,571,69
+ROCK,Rock,pollicipes,130,NA,NA
+ROCK,Rock,recovery,NA,42,NA
+ROCK,Rock,red_algae,60,NA,NA
+ROCK,Rock,rock,169,NA,NA
+ROCK,Rock,silvetia,2046,1190,NA
+ROCK,Rock,tar,130,NA,NA
+ROCK,Rock,tetraclita,344,NA,NA
+SAND,Sand,balanus,NA,488,345
+SAND,Sand,chthamalus_balanus,2369,1715,NA
+SAND,Sand,endocladia,2189,974,NA
+SAND,Sand,fucus,NA,273,NA
+SAND,Sand,hesperophycus,984,150,NA
+SAND,Sand,mastocarpus,NA,870,NA
+SAND,Sand,mazzaella,NA,129,NA
+SAND,Sand,mytilus,2543,1485,344
+SAND,Sand,pelvetiopsis,NA,201,60
+SAND,Sand,phyllospadix,261,571,69
+SAND,Sand,pollicipes,125,NA,NA
+SAND,Sand,recovery,NA,42,NA
+SAND,Sand,red_algae,60,NA,NA
+SAND,Sand,rock,159,NA,NA
+SAND,Sand,silvetia,1999,1190,NA
+SAND,Sand,tar,125,NA,NA
+SAND,Sand,tetraclita,339,NA,NA
+SARMUT,Sargassum muticum,balanus,NA,488,345
+SARMUT,Sargassum muticum,chthamalus_balanus,2267,1715,NA
+SARMUT,Sargassum muticum,endocladia,2097,953,NA
+SARMUT,Sargassum muticum,fucus,NA,260,NA
+SARMUT,Sargassum muticum,hesperophycus,944,150,NA
+SARMUT,Sargassum muticum,mastocarpus,NA,870,NA
+SARMUT,Sargassum muticum,mazzaella,NA,129,NA
+SARMUT,Sargassum muticum,mytilus,2437,1485,344
+SARMUT,Sargassum muticum,pelvetiopsis,NA,190,60
+SARMUT,Sargassum muticum,phyllospadix,261,571,69
+SARMUT,Sargassum muticum,pollicipes,120,NA,NA
+SARMUT,Sargassum muticum,recovery,NA,42,NA
+SARMUT,Sargassum muticum,red_algae,55,NA,NA
+SARMUT,Sargassum muticum,rock,159,NA,NA
+SARMUT,Sargassum muticum,silvetia,1912,1190,NA
+SARMUT,Sargassum muticum,tar,120,NA,NA
+SARMUT,Sargassum muticum,tetraclita,324,NA,NA
+SCYSPP,Scytosiphon/Melanosiphon spp,balanus,NA,488,345
+SCYSPP,Scytosiphon/Melanosiphon spp,chthamalus_balanus,2371,1715,NA
+SCYSPP,Scytosiphon/Melanosiphon spp,endocladia,2190,953,NA
+SCYSPP,Scytosiphon/Melanosiphon spp,fucus,NA,260,NA
+SCYSPP,Scytosiphon/Melanosiphon spp,hesperophycus,986,150,NA
+SCYSPP,Scytosiphon/Melanosiphon spp,mastocarpus,NA,870,NA
+SCYSPP,Scytosiphon/Melanosiphon spp,mazzaella,NA,129,NA
+SCYSPP,Scytosiphon/Melanosiphon spp,mytilus,2543,1485,344
+SCYSPP,Scytosiphon/Melanosiphon spp,pelvetiopsis,NA,190,60
+SCYSPP,Scytosiphon/Melanosiphon spp,pollicipes,125,NA,NA
+SCYSPP,Scytosiphon/Melanosiphon spp,recovery,NA,42,NA
+SCYSPP,Scytosiphon/Melanosiphon spp,red_algae,60,NA,NA
+SCYSPP,Scytosiphon/Melanosiphon spp,rock,159,NA,NA
+SCYSPP,Scytosiphon/Melanosiphon spp,silvetia,2001,1190,NA
+SCYSPP,Scytosiphon/Melanosiphon spp,tar,125,NA,NA
+SCYSPP,Scytosiphon/Melanosiphon spp,tetraclita,339,NA,NA
+SEMCAR,Semibalanus cariosus,balanus,NA,488,345
+SEMCAR,Semibalanus cariosus,chthamalus_balanus,NA,1598,NA
+SEMCAR,Semibalanus cariosus,endocladia,NA,838,NA
+SEMCAR,Semibalanus cariosus,fucus,NA,260,NA
+SEMCAR,Semibalanus cariosus,hesperophycus,NA,150,NA
+SEMCAR,Semibalanus cariosus,mastocarpus,NA,870,NA
+SEMCAR,Semibalanus cariosus,mazzaella,NA,129,NA
+SEMCAR,Semibalanus cariosus,mytilus,NA,1365,344
+SEMCAR,Semibalanus cariosus,pelvetiopsis,NA,130,60
+SEMCAR,Semibalanus cariosus,recovery,NA,42,NA
+SEMCAR,Semibalanus cariosus,silvetia,NA,1190,NA
+SEPBRA,Septifer bifurcatus; Brachidontes adamsianus,balanus,NA,203,55
+SEPBRA,Septifer bifurcatus; Brachidontes adamsianus,chthamalus_balanus,2375,663,NA
+SEPBRA,Septifer bifurcatus; Brachidontes adamsianus,endocladia,2197,474,NA
+SEPBRA,Septifer bifurcatus; Brachidontes adamsianus,fucus,NA,150,NA
+SEPBRA,Septifer bifurcatus; Brachidontes adamsianus,hesperophycus,989,95,NA
+SEPBRA,Septifer bifurcatus; Brachidontes adamsianus,mastocarpus,NA,505,NA
+SEPBRA,Septifer bifurcatus; Brachidontes adamsianus,mazzaella,NA,80,NA
+SEPBRA,Septifer bifurcatus; Brachidontes adamsianus,mytilus,2543,780,55
+SEPBRA,Septifer bifurcatus; Brachidontes adamsianus,pelvetiopsis,NA,75,NA
+SEPBRA,Septifer bifurcatus; Brachidontes adamsianus,pollicipes,125,NA,NA
+SEPBRA,Septifer bifurcatus; Brachidontes adamsianus,recovery,NA,24,NA
+SEPBRA,Septifer bifurcatus; Brachidontes adamsianus,red_algae,60,NA,NA
+SEPBRA,Septifer bifurcatus; Brachidontes adamsianus,rock,159,NA,NA
+SEPBRA,Septifer bifurcatus; Brachidontes adamsianus,silvetia,2005,680,NA
+SEPBRA,Septifer bifurcatus; Brachidontes adamsianus,tar,125,NA,NA
+SEPBRA,Septifer bifurcatus; Brachidontes adamsianus,tetraclita,339,NA,NA
+SILCOM,Silvetia compressa,balanus,NA,488,345
+SILCOM,Silvetia compressa,chthamalus_balanus,2374,1715,NA
+SILCOM,Silvetia compressa,endocladia,2199,953,NA
+SILCOM,Silvetia compressa,fucus,NA,260,NA
+SILCOM,Silvetia compressa,hesperophycus,997,150,NA
+SILCOM,Silvetia compressa,mastocarpus,NA,870,NA
+SILCOM,Silvetia compressa,mazzaella,NA,129,NA
+SILCOM,Silvetia compressa,mytilus,2543,1485,344
+SILCOM,Silvetia compressa,pelvetiopsis,NA,190,60
+SILCOM,Silvetia compressa,pollicipes,125,NA,NA
+SILCOM,Silvetia compressa,recovery,NA,42,NA
+SILCOM,Silvetia compressa,red_algae,60,NA,NA
+SILCOM,Silvetia compressa,rock,159,NA,NA
+SILCOM,Silvetia compressa,silvetia,2023,1190,NA
+SILCOM,Silvetia compressa,tar,125,NA,NA
+SILCOM,Silvetia compressa,tetraclita,339,NA,NA
+TAR,Tar,balanus,NA,488,345
+TAR,Tar,chthamalus_balanus,2375,1715,NA
+TAR,Tar,endocladia,2190,953,NA
+TAR,Tar,fucus,NA,260,NA
+TAR,Tar,hesperophycus,985,150,NA
+TAR,Tar,mastocarpus,NA,870,NA
+TAR,Tar,mazzaella,NA,129,NA
+TAR,Tar,mytilus,2543,1485,344
+TAR,Tar,pelvetiopsis,NA,190,60
+TAR,Tar,phyllospadix,261,489,69
+TAR,Tar,pollicipes,125,NA,NA
+TAR,Tar,recovery,NA,42,NA
+TAR,Tar,red_algae,60,NA,NA
+TAR,Tar,rock,159,NA,NA
+TAR,Tar,silvetia,1999,1190,NA
+TAR,Tar,tar,130,NA,NA
+TAR,Tar,tetraclita,339,NA,NA
+TETRUB,Tetraclita rubescens,balanus,NA,488,345
+TETRUB,Tetraclita rubescens,chthamalus_balanus,2374,1715,NA
+TETRUB,Tetraclita rubescens,endocladia,2202,953,NA
+TETRUB,Tetraclita rubescens,fucus,NA,260,NA
+TETRUB,Tetraclita rubescens,hesperophycus,984,150,NA
+TETRUB,Tetraclita rubescens,mastocarpus,NA,870,NA
+TETRUB,Tetraclita rubescens,mazzaella,NA,129,NA
+TETRUB,Tetraclita rubescens,mytilus,2572,1485,344
+TETRUB,Tetraclita rubescens,pelvetiopsis,NA,190,60
+TETRUB,Tetraclita rubescens,pollicipes,127,NA,NA
+TETRUB,Tetraclita rubescens,recovery,NA,42,NA
+TETRUB,Tetraclita rubescens,red_algae,60,NA,NA
+TETRUB,Tetraclita rubescens,rock,159,NA,NA
+TETRUB,Tetraclita rubescens,silvetia,2009,1190,NA
+TETRUB,Tetraclita rubescens,tar,125,NA,NA
+TETRUB,Tetraclita rubescens,tetraclita,344,NA,NA
+ULVENT,Ulva/Enteromorpha,balanus,NA,488,345
+ULVENT,Ulva/Enteromorpha,chthamalus_balanus,2373,1715,NA
+ULVENT,Ulva/Enteromorpha,endocladia,2190,974,NA
+ULVENT,Ulva/Enteromorpha,fucus,NA,273,NA
+ULVENT,Ulva/Enteromorpha,hesperophycus,987,150,NA
+ULVENT,Ulva/Enteromorpha,mastocarpus,NA,870,NA
+ULVENT,Ulva/Enteromorpha,mazzaella,NA,129,NA
+ULVENT,Ulva/Enteromorpha,mytilus,2544,1485,344
+ULVENT,Ulva/Enteromorpha,pelvetiopsis,NA,201,60
+ULVENT,Ulva/Enteromorpha,pollicipes,125,NA,NA
+ULVENT,Ulva/Enteromorpha,recovery,NA,42,NA
+ULVENT,Ulva/Enteromorpha,red_algae,60,NA,NA
+ULVENT,Ulva/Enteromorpha,rock,159,NA,NA
+ULVENT,Ulva/Enteromorpha,silvetia,2003,1190,NA
+ULVENT,Ulva/Enteromorpha,tar,125,NA,NA
+ULVENT,Ulva/Enteromorpha,tetraclita,339,NA,NA
+ZOSMAR,Zostera marina,phyllospadix,NA,19,NA
