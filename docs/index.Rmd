@@ -179,7 +179,7 @@ plot_intertidal_nms(d_csv, "MBNMS", "CHTBAL", "Acorn Barnacles")
 plot_intertidal_nms(d_csv, "MBNMS", "MYTCAL", "California Mussels")
 ```
 
-## Longitudinal Gradient
+## Latitudinal Gradient
 
 ```{r}
 
@@ -199,10 +199,10 @@ NMS="MBNMS"; spp="MYTCAL"; sp_name="California Mussels"
       pct_cover = mean(pct_cover)) %>%
     left_join(
       sites_tbl, by="site") %>%
-    select(site, year, pct_cover, lon) %>%
-    arrange(lon, year, pct_cover) # View(d)
+    select(site, year, pct_cover, lat) %>%
+    arrange(lat, year, pct_cover) # View(d)
   
-  g <- ggplot(d, aes(x=lon, y=pct_cover, group=year, color=year)) +
+  g <- ggplot(d, aes(x=lat, y=pct_cover, group=year, color=year)) +
     geom_line() + 
     scale_color_gradientn(
       colors=RColorBrewer::brewer.pal(11, "Spectral"),
@@ -210,7 +210,7 @@ NMS="MBNMS"; spp="MYTCAL"; sp_name="California Mussels"
     coord_flip() +
     labs(
       title = glue("{sp_name} in {NMS}"),
-      x = "Longitude", y = "% cover")
+      x = "Latitude", y = "% cover")
   
   plotly::ggplotly(g)
     #scale_x_log10()
